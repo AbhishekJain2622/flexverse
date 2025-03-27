@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 28%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 28%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 28%;
+    --primary: 160 84% 67%;
+    --primary-foreground: 220 13% 28%;
+    --secondary: 220 13% 28%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 160 84% 67%;
+    --accent-foreground: 220 13% 28%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 160 84% 67%;
+    --radius: 0.5rem;
+    --header: 220 20% 18%;
+    --header-light: 220 20% 22%;
+    --footer: 220 20% 15%;
+  }
+
+  .dark {
+    --background: 220 13% 28%;
+    --foreground: 0 0% 100%;
+    --card: 220 13% 28%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 13% 28%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 160 84% 67%;
+    --primary-foreground: 220 13% 28%;
+    --secondary: 220 13% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 160 84% 67%;
+    --accent-foreground: 220 13% 28%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 160 84% 67%;
+    --header: 220 20% 18%;
+    --header-light: 220 20% 22%;
+    --footer: 220 20% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+  }
+  p,
+  a,
+  button h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+  }
+  p,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  li {
+    font-family: var(--font-inter);
+  }
+}
+
+/* Custom utility classes */
+.clip-path-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+}
+
+@layer utilities {
+  .gradient-text {
+    background-image: linear-gradient(to right, #5ebfad, #8bf5b5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .gradient-bg {
+    background-image: linear-gradient(to right, #5ebfad, #8bf5b5);
+  }
+}
+
+/* Client carousel animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-48px - 100% / 2));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.client-carousel-track {
+  width: fit-content;
+}
+
