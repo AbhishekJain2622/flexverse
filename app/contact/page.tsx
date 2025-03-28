@@ -64,7 +64,7 @@ export default function ContactPage() {
       </p>
     </div>
   </div>
-  <div className="absolute bottom-0 left-0 right-0 h-16 bg-white clip-path-bottom"></div>
+
 </section>
 
 
@@ -220,13 +220,14 @@ export default function ContactPage() {
               </div>
 
               <div className="rounded-lg overflow-hidden h-80 bg-gray-200">
-              <iframe
-                className="w-full h-[250px] md:h-[350px]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093746!2d-122.41941568468267!3d37.77492927975945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzMwLjkiTiAxMjLCsDI1JzA5LjgiVw!5e0!3m2!1sen!2sin!4v1618379009056!5m2!1sen!2sin"
-                allowFullScreen
-                loading="lazy"
-              ></iframe>
-              </div>
+  <iframe
+    className="w-full h-[250px] md:h-[350px]"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15058.186515453583!2d72.8491434!3d19.1140828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c83139b896df%3A0x5013c75ebae5a4f1!2sInizio!5e0!3m2!1sen!2sin!4v1711212345678"
+    allowFullScreen
+    loading="lazy"
+  ></iframe>
+</div>
+
 
              
             </div>

@@ -8,22 +8,19 @@ export default function AboutPage() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section 
-  className="relative bg-primary py-20 text-white bg-cover bg-center bg-no-repeat" 
-  style={{ backgroundImage: "url('/images/about5.png')" }} // Replace with your image path
+   
+
+<section 
+className="relative bg-primary py-20 text-white bg-cover bg-center bg-no-repeat" 
+style={{ backgroundImage: "url('/images/about5.png')" }}
 >
-  <div className="container mx-auto px-4">
-    <div className="mx-auto max-w-3xl text-center">
-      <h1 className="mb-6 text-4xl font-bold md:text-5xl">About Flexverse</h1>
-      <p className="text-lg text-white/90 md:text-xl">
-        Learn about our journey, our values, and the team that makes Flexverse a leader in innovative solutions.
-      </p>
-    </div>
-  </div>
-  <div className="absolute bottom-0 left-0 right-0 h-16 bg-white clip-path-bottom"></div>
+<div className="container mx-auto px-4 text-center">
+  <h1 className="mb-6 text-4xl font-bold md:text-5xl">About Flexverse</h1>
+  <p className="text-lg text-white/90 md:text-xl max-w-3xl mx-auto">
+    Learn about our journey, our values, and the team that makes Flexverse a leader in innovative solutions.
+  </p>
+</div>
 </section>
-
-
       {/* Company History */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -205,16 +202,3 @@ export default function AboutPage() {
 
 
 
-
-
-// <section 
-// className="relative bg-primary py-20 text-white bg-cover bg-center bg-no-repeat" 
-// style={{ backgroundImage: "url('/images/about5.png')" }}
-// >
-// <div className="container mx-auto px-4 text-center">
-//   <h1 className="mb-6 text-4xl font-bold md:text-5xl">About Flexverse</h1>
-//   <p className="text-lg text-white/90 md:text-xl max-w-3xl mx-auto">
-//     Learn about our journey, our values, and the team that makes Flexverse a leader in innovative solutions.
-//   </p>
-// </div>
-// </section>

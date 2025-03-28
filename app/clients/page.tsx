@@ -39,27 +39,21 @@ const clients = [
 export default function ClientsPage() {
   return (
     <main className="pt-20">
-      {/* Hero Section */}
-      <section className="relative bg-header py-20 text-white">
-        <div className="absolute inset-0 opacity-100">
-          <Image
-            src="/images/client.png"
-            alt="Business Partnership"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold md:text-5xl">Our Clients</h1>
-            <p className="text-lg text-white md:text-xl">
-              We're proud to work with leading organizations across various industries
-            </p>
-          </div>
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-white clip-path-bottom"></div>
-      </section>
+ {/* Hero Section */}
+<section 
+  className="relative bg-cover bg-center py-20 text-white" 
+  style={{ backgroundImage: "url('/images/client.png')" }}
+>
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="mx-auto max-w-3xl text-center">
+      <h1 className="mb-6 text-4xl font-bold md:text-5xl">Our Clients</h1>
+      <p className="text-lg text-white md:text-xl">
+        We're proud to work with leading organizations across various industries
+      </p>
+    </div>
+  </div>
+
+</section>
 
       {/* Clients Carousel
       <section className="py-16">

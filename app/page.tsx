@@ -191,7 +191,7 @@ export default function Home() {
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="mb-6 text-3xl font-bold tracking-tight gradient-text md:text-4xl">About Company</h2>
+              <h2 className="mb-6 text-3xl font-bold tracking-tight gradient-text md:text-4xl"> Welcome to Flexverse</h2>
               <p className="mb-4 text-[20px] leading-relaxed text-foreground/90 font-normal">
   Trusted Excellence in High-Quality Construction Products
 </p>
@@ -250,7 +250,7 @@ export default function Home() {
                 </div>
               </div>
               <Button className="mt-6 gradient-bg text-header hover:opacity-90" asChild>
-                <Link href="/about">Learn More About Us</Link>
+                <Link href="/about">Learn More Flexverse</Link>
               </Button>
             </div>
           </div>
@@ -356,7 +356,7 @@ export default function Home() {
                 <Phone className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Phone</h3>
-              <a href="tel:+919322288578" className="hover:text-primary transition">
+              <a href="tel:+919322288578" className="hover:text-white transition">
                   +91 9322288578
                 </a>
               {/* <p className="text-header/90">+91 9876543210</p> */}
@@ -366,7 +366,7 @@ export default function Home() {
                 <Mail className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Email</h3>
-              <a href="mailto:info@flexverse.in" className="hover:text-primary transition">
+              <a href="mailto:info@flexverse.in" className="hover:text-white transition">
                   info@flexverse.in
                 </a>
               {/* <p className="text-header/90">support@flexverse.in</p> */}
@@ -376,8 +376,8 @@ export default function Home() {
                 <MapPin className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Address</h3>
-              <p className="text-header/90">Inizio, 201, Cardinal Gracious Road, Chakala.</p>
-              <p className="text-header/90">Andheri East, Mumbai 400049</p>
+              <p className="text-header/90 hover:text-white">Inizio, 201, Cardinal Gracious Road, Chakala.Andheri East, Mumbai 400049</p>
+              {/* <p className="text-header/90 hover:text-white"></p> */}
             </div>
           </div>
           <div className="mt-12 text-center">

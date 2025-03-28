@@ -46,17 +46,18 @@ export default function Header() {
         scrolled ? "bg-white dark:bg-gray-900/90 shadow-md" : "bg-transparent"
       )}
     >
-      <div className="bg-white mx-auto  flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
-        {/* Logo */}
-        <Link href="/" className="relative z-10 flex items-center">
-          <Image
-            src="/images/flexverse-logo.png"
-            alt="Flexverse Logo"
-            width={220}
-            height={90}
-            className="h-15 md:h-16 ml-12 w-auto max-w-[220px]"
-          />
-        </Link>
+      <div className="bg-white mx-auto flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
+        
+      <Link href="/" className="hidden md:flex items-center ml-6 md:ml-14">
+  <Image
+    src="/images/flexverse-logo.png"
+    alt="Flexverse Logo"
+    width={220}
+    height={90}
+    className="h-12 md:h-16 w-auto max-w-[220px]"
+  />
+</Link>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
@@ -115,8 +116,21 @@ export default function Header() {
           </Button>
         </div>
 
-        {/* Mobile Menu */}
-        <div className="md:hidden">
+        {/* ✅ Mobile Navigation & Logo - Only visible on small screens */}
+        <div className="md:hidden flex items-center justify-between w-full px-4">
+          
+          {/* ✅ Mobile Logo - Only visible on small screens */}
+          <Link href="/" className="flex md:hidden">
+            <Image
+              src="/images/flexverse-logo.png"
+              alt="Flexverse Logo"
+              width={180}
+              height={70}
+              className="h-12 w-auto"
+            />
+          </Link>
+
+          {/* Mobile Menu */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -172,6 +186,7 @@ export default function Header() {
             </SheetContent>
           </Sheet>
         </div>
+
       </div>
     </header>
   );

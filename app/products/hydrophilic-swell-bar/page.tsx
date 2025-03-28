@@ -27,7 +27,7 @@ export default function HydrophilicSwellBarPage() {
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-white clip-path-bottom"></div>
+        {/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-white clip-path-bottom"></div> */}
       </section>
 
       {/* Product Description */}
@@ -80,6 +80,8 @@ export default function HydrophilicSwellBarPage() {
           <span>Download Catalogue</span>
         </Button>
       </a>
+      <br />
+      <br />
       <a href="/files/tech.pdf" download="Technical_Data_Sheet.pdf">
         <Button variant="outline" className="w-full justify-start gap-2">
           <FileText className="h-4 w-4" />
