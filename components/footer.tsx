@@ -13,22 +13,14 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Image
-              src="/images/flexverse-logo.png"
+              src="/Untitled.png"
               alt="Flexverse Logo"
               width={150}
               height={40}
-              className="mb-4 h-12 w-auto"
+              className="mb-4 h-25 w-19"
             />
-            <p className="mb-6 text-white/90">
-              Flexverse is your partner in creating flexible solutions for today's complex business environment.
-            </p>
+           
             <div className="flex space-x-4">
-              <Link href="#" className="rounded-full bg-white/10 p-2 text-white hover:bg-white/20">
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="rounded-full bg-white/10 p-2 text-white hover:bg-white/20">
-                <Twitter className="h-5 w-5" />
-              </Link>
               <Link href="#" className="rounded-full bg-white/10 p-2 text-white hover:bg-white/20">
                 <Instagram className="h-5 w-5" />
               </Link>
@@ -67,11 +59,7 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <Link href="/privacy-policy" className="text-white/90 hover:text-primary">
-                  Privacy Policy
-                </Link>
-              </li>
+           
             </ul>
           </div>
 
@@ -87,13 +75,18 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary" />
-                <span className="text-white/90">+91 1234567890</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary" />
-                <span className="text-white/90">info@flexverse.in</span>
-              </li>
+  <Phone className="h-5 w-5 text-primary" />
+  <a href="tel:+919322288578" className="text-white/90 hover:underline">
+  +91 9322288578
+  </a>
+</li>
+<li className="flex items-center gap-3">
+  <Mail className="h-5 w-5 text-primary" />
+  <a href="mailto:info@flexverse.in" className="text-white/90 hover:underline">
+    info@flexverse.in
+  </a>
+</li>
+
             </ul>
           </div>
 

@@ -11,30 +11,16 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "About Us", href: "/about" },
   {
     label: "Products",
     href: "/products",
     children: [
-      {
-        label: "Hydrophilic Swell Bar",
-        href: "/products/hydrophilic-swell-bar",
-        description: "Water stop for concrete construction joints",
-      },
-      {
-        label: "PVC Waterstop",
-        href: "/products/pvc-waterstop",
-        description: "Flexible PVC waterstops for joints",
-      },
-      {
-        label: "All Products",
-        href: "/products",
-        description: "View our complete product range",
-      },
+      { label: "HYDROPHILIC SWELL BAR", href: "/products/hydrophilic-swell-bar" },
     ],
   },
   { label: "Clients", href: "/clients" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Header() {
@@ -45,7 +31,6 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -57,51 +42,50 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 z-50 w-full  transition-all duration-300",
+        "fixed top-0 z-50 w-full transition-all duration-300",
         scrolled ? "bg-white dark:bg-gray-900/90 shadow-md" : "bg-transparent"
       )}
     >
-      <div className=" bg-white  mx-auto flex h-20  items-center justify-between px-4">
+      <div className="bg-white mx-auto flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="relative z-10 flex items-center">
           <Image
             src="/images/flexverse-logo.png"
             alt="Flexverse Logo"
-            width={180}
-            height={70}
-            className="h-12 w-auto"
+            width={220}
+            height={90}
+            className="h-12 md:h-16 w-auto max-w-[220px]"
           />
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
-          <ul className="flex items-center space-x-4">
+          <ul className="flex items-center space-x-4 lg:space-x-6">
             {navItems.map((item) => (
               <li key={item.label} className="relative">
                 {item.children ? (
                   <div>
                     <button
                       onClick={() => toggleDropdown(item.label)}
-                      className="flex items-center px-4 py-2 text-sm font-medium text-gray-800 dark:text-white hover:text-primary"
+                      className="flex items-center px-4 py-2 text-base lg:text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
                     >
                       {item.label}
                       <ChevronDown
-                        className={`ml-1 h-4 w-4 transition-transform ${
+                        className={`ml-1 h-5 w-5 transition-transform ${
                           activeDropdown === item.label ? "rotate-180" : ""
                         }`}
                       />
                     </button>
                     {activeDropdown === item.label && (
-                      <div className="absolute left-0 top-full mt-1 w-64 rounded-md bg-white dark:bg-gray-800 p-2 shadow-lg">
+                      <div className="absolute left-0 top-full mt-2 w-64 rounded-md bg-white dark:bg-gray-800 p-3 shadow-lg">
                         {item.children.map((child) => (
                           <Link
                             key={child.label}
                             href={child.href}
-                            className="block rounded-md px-4 py-2 text-sm text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                            className="block rounded-md px-4 py-2 text-base text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                             onClick={() => setActiveDropdown(null)}
                           >
-                            <div className="font-medium">{child.label}</div>
-                            <div className="text-xs text-gray-600 dark:text-gray-300">{child.description}</div>
+                            {child.label}
                           </Link>
                         ))}
                       </div>
@@ -110,7 +94,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block px-4 py-2 text-sm font-medium text-gray-800 dark:text-white hover:text-primary"
+                    className="block px-4 py-2 text-base lg:text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
                   >
                     {item.label}
                   </Link>
@@ -122,7 +106,11 @@ export default function Header() {
 
         {/* Contact Button */}
         <div className="hidden md:block">
-          <Button size="sm" className="bg-primary text-white hover:opacity-90 font-bold" asChild>
+          <Button
+            size="lg"
+            className="bg-primary text-white hover:opacity-90 font-semibold px-5 py-2"
+            asChild
+          >
             <Link href="/contact">Request a Quote</Link>
           </Button>
         </div>
@@ -132,7 +120,7 @@ export default function Header() {
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6 text-gray-800 dark:text-white" />
+                <Menu className="h-7 w-7 text-gray-800 dark:text-white" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
@@ -144,12 +132,14 @@ export default function Header() {
                       <div className="mb-2">
                         <button
                           onClick={() => toggleDropdown(item.label)}
-                          className="flex w-full items-center justify-between py-2 text-lg font-bold text-gray-800 dark:text-white"
+                          className="flex w-full items-center justify-between py-3 text-lg font-semibold text-gray-800 dark:text-white"
                         >
                           {item.label}
-                          <ChevronDown className={`h-5 w-5 transition-transform ${
-                            activeDropdown === item.label ? "rotate-180" : ""
-                          }`} />
+                          <ChevronDown
+                            className={`h-6 w-6 transition-transform ${
+                              activeDropdown === item.label ? "rotate-180" : ""
+                            }`}
+                          />
                         </button>
                         {activeDropdown === item.label && (
                           <div className="ml-4 mt-2 space-y-2 border-l-2 border-primary pl-4">
@@ -157,7 +147,7 @@ export default function Header() {
                               <Link
                                 key={child.label}
                                 href={child.href}
-                                className="block py-2 text-gray-800 dark:text-white hover:text-primary"
+                                className="block py-2 text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
                               >
                                 {child.label}
                               </Link>
@@ -166,13 +156,16 @@ export default function Header() {
                         )}
                       </div>
                     ) : (
-                      <Link href={item.href} className="block py-2 text-lg font-bold text-gray-800 dark:text-white hover:text-primary">
+                      <Link
+                        href={item.href}
+                        className="block py-3 text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
+                      >
                         {item.label}
                       </Link>
                     )}
                   </div>
                 ))}
-                <Button className="mt-4 w-full bg-primary text-white hover:opacity-90 font-bold" asChild>
+                <Button className="mt-4 w-full bg-primary text-white hover:opacity-90 font-semibold py-3" asChild>
                   <Link href="/contact">Request a Quote</Link>
                 </Button>
               </div>

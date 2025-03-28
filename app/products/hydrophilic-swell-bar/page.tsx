@@ -36,8 +36,8 @@ export default function HydrophilicSwellBarPage() {
           <div className="grid gap-12 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <h2 className="mb-6 text-3xl font-bold text-primary">Product Description</h2>
-              <div className="space-y-4 text-foreground/90">
-                <p>
+              <div className="space-y-4  text-foreground/90">
+                <p className="font-normal">
                 The Flexverse® hydrophilic swell bar is a water stop that can be used to stop water ingress through cast-in-place concrete construction joints and penetrations in concrete. The profile has a sophisticated hydrophilic structure, which has been engineered to swell on contact with water and exert pressure against the ingress inside the structure. This forms an effective sealing system that can bar water entering even through the most microscopic cracks and penetrations. Flexverse® hydrophilic swell bars are crafted to have a robust build, and possess a unique reversible chemistry that ensure our swell bars can endure repeated cycles of wet-dry expansion and contraction in the long-run, while retaining their properties.
                 </p>
                
@@ -70,25 +70,26 @@ export default function HydrophilicSwellBarPage() {
             </div>
 
             <div>
-              <Card className="overflow-hidden">
-                <CardContent className="p-6">
-                  <h3 className="mb-6 text-xl font-bold text-primary">FLEXVERSE® Resources</h3>
-                  <div className="space-y-4">
-                    <Button variant="outline" className="w-full justify-start gap-2">
-                      <Download className="h-4 w-4" />
-                      <span>Download Catalogue</span>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start gap-2">
-                      <FileText className="h-4 w-4" />
-                      <span>Technical Data Sheet</span>
-                    </Button>
-                    <Button className="w-full gradient-bg text-header hover:opacity-90 mt-4 gap-2">
-                      <Send className="h-4 w-4" />
-                      <span>Enquire Now</span>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+            <Card className="overflow-hidden">
+  <CardContent className="p-6">
+    <h3 className="mb-6 text-xl font-bold text-primary">FLEXVERSE® Resources</h3>
+    <div className="space-y-4">
+      <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf">
+        <Button variant="outline" className="w-full justify-start gap-2">
+          <Download className="h-4 w-4" />
+          <span>Download Catalogue</span>
+        </Button>
+      </a>
+      <a href="/files/tech.pdf" download="Technical_Data_Sheet.pdf">
+        <Button variant="outline" className="w-full justify-start gap-2">
+          <FileText className="h-4 w-4" />
+          <span>Technical Data Sheet</span>
+        </Button>
+      </a>
+   
+    </div>
+  </CardContent>
+</Card>
 
               <div className="mt-8">
                 <h3 className="mb-4 text-xl font-bold text-primary">Need Help?</h3>

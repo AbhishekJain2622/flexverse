@@ -21,7 +21,7 @@ const products = [
   {
     title: "Hydrophilic Swell Bar",
     slug: "hydrophilic-swell-bar",
-    description: "Flexverse® hydrophilic swell bars are advanced waterstops designed to prevent water ingress through concrete joints and penetrations by swelling upon contact with water. These swell bars are composed of specialized hydrophilic materials such as neoprene or polymers that can expand significantly when exposed to moisture, effectively sealing construction joints post-installation. Their durable and reversible chemistry ensures long-term performance through repeated wet-dry cycles, maintaining flexibility and accommodating structural movements.They are easy to install using nails, hooks, or adhesives and are highly resistant to various chemicals, including acids and alkalis, making them ideal for use in aggressive environments such as sewage treatment plants, reservoirs, and water retention structures. With different size variations to suit diverse construction needs, ",
+    description: "Flexverse® hydrophilic swell bars prevent water ingress in concrete by swelling on contaFlexverse® hydrophilic swell bars are advanced water stops designed to prevent water ingress through concrete joints and penetrations by swelling upon contact with water. Their durable, reversible chemistry ensures long-term performance through repeated wet-dry cycles.",
     image: "/images/1.png",
   },
   
@@ -192,12 +192,13 @@ export default function Home() {
             </div>
             <div className="lg:w-1/2">
               <h2 className="mb-6 text-3xl font-bold tracking-tight gradient-text md:text-4xl">About Company</h2>
-              <p className="mb-4 text-lg leading-relaxed text-foreground/90">
-              Trusted Excellence in High-Quality Construction Products
-              </p>
-              <p className="mb-6 text-[18px] leading-relaxed text-foreground/90">
-              With over 30 years of expertise from Hitech Rubber Industries (Mumbai) and Kanta Enterprises (Bengaluru), Flexverse Polymers is your trusted partner for high-quality construction products. Driven by innovation and a commitment to excellence, we ensure our products meet the highest national and international standards, undergoing rigorous quality checks in NABL-approved labs. At Flexverse, we take pride in delivering exceptional customer service, offering reliable solutions that stand the test of time, even in the toughest conditions.
-              </p>
+              <p className="mb-4 text-[20px] leading-relaxed text-foreground/90 font-normal">
+  Trusted Excellence in High-Quality Construction Products
+</p>
+<p className="mb-6 text-[17px] leading-relaxed text-foreground/90 font-normal">
+  With over 30 years of expertise from Hitech Rubber Industries (Mumbai) and Kanta Enterprises (Bengaluru), Flexverse Polymers is your trusted partner for high-quality construction products. Driven by innovation and a commitment to excellence, we ensure our products meet the highest national and international standards, undergoing rigorous quality checks in NABL-approved labs. At Flexverse, we take pride in delivering exceptional customer service, offering reliable solutions that stand the test of time, even in the toughest conditions.
+</p>
+
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -255,10 +256,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Products Section */}
-      <section className="bg-secondary/5 py-20" ref={productsRef}>
-  <div className="container mx-auto px-4">
+{/* Products Section */}
+<section className="bg-secondary/5 py-20" ref={productsRef}>
+  <div className="container mx-auto px-6 md:px-12 lg:px-16">
     {/* Heading */}
     <div className="mb-12 text-center">
       <h2 className="mb-3 text-3xl font-bold tracking-tight gradient-text md:text-4xl">
@@ -269,48 +269,52 @@ export default function Home() {
       </p>
     </div>
 
-    {/* Product Display (Two-Column) */}
-    {products.map((product, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center gap-8 md:flex-row"
-      >
-        {/* Image Section */}
-        <div className="w-full ml-10 md:w-1/2">
-          <Image
-            src={product.image || "/images/1.png"}
-            alt={product.title}
-            width={600}
-            height={600}
-            className="rounded-lg shadow-md"
-          />
-        </div>
+    {/* Product Display */}
+    <div className="grid grid-cols-1 gap-12 lg:gap-16">
+      {products.map((product, index) => (
+        <div
+          key={index}
+          className={`flex flex-col-reverse ${
+            index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+          } items-center gap-8`}
+        >
+          {/* Image Section */}
+          <div className="w-full md:w-1/2 flex justify-center">
+            <Image
+              src={product.image || "/images/1.png"}
+              alt={product.title}
+              width={500}
+              height={400}
+              className="rounded-lg shadow-md"
+            />
+          </div>
 
-        {/* Text Section */}
-        <div className="w-full md:w-1/2">
-          <h3 className="mb-2 text-2xl font-semibold text-primary">
-            {product.title}
-          </h3>
-          <p className="text-primary-700">{product.description}</p>
+          {/* Text Section */}
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h3 className="mb-2 text-2xl font-semibold text-primary">
+              {product.title}
+            </h3>
+            <p className="text-primary-700  font-normal text-[18px] leading-relaxed">{product.description}</p>
 
-          {/* Buttons */}
-          <div className="mt-4 flex gap-4">
-            <Button
-              size="lg"
-              className="text-primary text-white px-6 py-3 rounded-lg font-medium"
-            >
-              CATALOGUE
-            </Button>
-            <Button
-              size="lg"
-              className="text-primary-900 text-white px-6 py-3 rounded-lg font-medium"
-            >
-              KNOW MORE
-            </Button>
+            {/* Buttons */}
+            <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+              <Button
+                size="lg"
+                className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
+              >
+                CATALOGUE
+              </Button>
+              <Button
+                size="lg"
+                className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
+              >
+                KNOW MORE
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
 </section>
 
