@@ -150,7 +150,7 @@ export default function Home() {
               className="gradient-bg font-medium hover:opacity-90 text-header relative overflow-hidden group animate-highlight"
               asChild
             >
-              <Link href="/products" className="flex items-center gap-2">
+              <Link href="/products/hydrophilic-swell-bar" className="flex items-center gap-2">
                 <span className="relative z-10">Explore Our Products</span>
                 <span className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>

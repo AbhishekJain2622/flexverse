@@ -50,7 +50,7 @@ export default function Header() {
         
       <Link href="/" className="hidden md:flex items-center ml-6 md:ml-14">
   <Image
-    src="/images/flexverse-logo.png"
+    src="/images/053.jpg"
     alt="Flexverse Logo"
     width={220}
     height={90}
