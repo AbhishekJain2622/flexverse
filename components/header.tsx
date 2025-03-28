@@ -122,7 +122,7 @@ export default function Header() {
           {/* ✅ Mobile Logo - Only visible on small screens */}
           <Link href="/" className="flex md:hidden">
             <Image
-              src="/images/flexverse-logo.png"
+              src="/images/053.jpg"
               alt="Flexverse Logo"
               width={180}
               height={70}
