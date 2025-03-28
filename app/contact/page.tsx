@@ -198,7 +198,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="mb-2 text-lg font-semibold">Phone Number</h3>
-                    <p className="text-gray-400">+91 9322288578</p>
+                    <a href="tel:+919322288578" className="text-gray-400">
+                  +91 9322288578
+                </a>
                     {/* <p className="text-gray-600">+91 9876543210</p> */}
                   </div>
                 </div>
@@ -209,7 +211,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="mb-2 text-lg font-semibold">Email Address</h3>
-                    <p className="text-gray-400">info@flexverse.in</p>
+                    <a href="mailto:info@flexverse.in" className="text-gray-400">
+                  info@flexverse.in
+                </a>
                     {/* <p className="text-gray-600">support@flexverse.in</p> */}
                   </div>
                 </div>

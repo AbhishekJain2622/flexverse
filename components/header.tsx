@@ -46,7 +46,7 @@ export default function Header() {
         scrolled ? "bg-white dark:bg-gray-900/90 shadow-md" : "bg-transparent"
       )}
     >
-      <div className="bg-white mx-auto flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
+      <div className="bg-white mx-auto  flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="relative z-10 flex items-center">
           <Image
@@ -54,7 +54,7 @@ export default function Header() {
             alt="Flexverse Logo"
             width={220}
             height={90}
-            className="h-12 md:h-16 w-auto max-w-[220px]"
+            className="h-15 md:h-16 ml-12 w-auto max-w-[220px]"
           />
         </Link>
 

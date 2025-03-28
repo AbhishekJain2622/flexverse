@@ -128,7 +128,7 @@ export default function Home() {
       {/* Hero Section */}
        {/* Hero Section */}
        <section className="relative h-[90vh] overflow-hidden bg-header" ref={heroRef}>
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute  inset-0 opacity-30">
           <Image
             src="/images/hero.jpg"
             alt="Flexverse Hero"
@@ -356,7 +356,9 @@ export default function Home() {
                 <Phone className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Phone</h3>
-              <p className="text-header/90"> +91 9322288578</p>
+              <a href="tel:+919322288578" className="hover:text-primary transition">
+                  +91 9322288578
+                </a>
               {/* <p className="text-header/90">+91 9876543210</p> */}
             </div>
             <div className="flex flex-col items-center rounded-lg bg-white/10 p-6 text-center">
@@ -364,7 +366,9 @@ export default function Home() {
                 <Mail className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Email</h3>
-              <p className="text-header/90">info@flexverse.in</p>
+              <a href="mailto:info@flexverse.in" className="hover:text-primary transition">
+                  info@flexverse.in
+                </a>
               {/* <p className="text-header/90">support@flexverse.in</p> */}
             </div>
             <div className="flex flex-col items-center rounded-lg bg-white/10 p-6 text-center">
