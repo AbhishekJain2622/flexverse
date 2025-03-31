@@ -43,7 +43,7 @@ style={{ backgroundImage: "url('/images/about5.png')" }}
       <div className="w-full md:w-1/2 px-4 text-center md:text-right md:pr-12">
         <h3 className="mb-2 text-xl font-semibold">ABOUT COMPANY</h3>
         <p className="text-gray-600 font-normal">
-          Welcome to Flexverse Polymers— your trusted partner in providing innovative solutions for the construction and infrastructure sectors. Founded in 2022, Flexverse Polymers is the result of over three decades of industry expertise, built upon the legacy of our sister companies: Hitech Rubber Industries, Mumbai (established in 1995), and Kanta Enterprises, Bengaluru (established in 1987). Together, our companies have been at the forefront of construction, infrastructure, and waterproofing industries, delivering exceptional products and services across a diverse range of prestigious projects in India and around the world.
+          Welcome to Flexverse Polymers— your trusted partner in providing innovative solutions for the construction and infrastructure sectors. Founded in 2022, Flexverse Polymers is the result of over three decades of industry expertise, built upon the legacy of our sister companies:<a href="https://www.hitechrubber.in/bridge_bearings.html" className="text-primary "> Hitech Rubber Industries </a>, Mumbai (established in 1995), and Kanta Enterprises, Bengaluru (established in 1987). Together, our companies have been at the forefront of construction, infrastructure, and waterproofing industries, delivering exceptional products and services across a diverse range of prestigious projects in India and around the world.
         </p>
       </div>
       <div className="relative flex items-center justify-center w-full md:w-1/2 px-4">

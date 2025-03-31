@@ -48,7 +48,7 @@ export default function Header() {
     >
       <div className="bg-white mx-auto flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
         
-      <Link href="/" className="hidden md:flex items-center ml-6 md:ml-14">
+      <Link href="/" className="hidden md:flex flex-col items-center ml-6 md:ml-14">
   <Image
     src="/images/053.jpg"
     alt="Flexverse Logo"
@@ -56,6 +56,7 @@ export default function Header() {
     height={90}
     className="h-12 md:h-16 w-auto max-w-[220px]"
   />
+  <span className="mt-1 text-sm text-primary">FLEXVERSE</span>
 </Link>
 
 
@@ -120,15 +121,17 @@ export default function Header() {
         <div className="md:hidden flex items-center justify-between w-full px-4">
           
           {/* ✅ Mobile Logo - Only visible on small screens */}
-          <Link href="/" className="flex md:hidden">
-            <Image
-              src="/images/053.jpg"
-              alt="Flexverse Logo"
-              width={180}
-              height={70}
-              className="h-12 w-auto"
-            />
-          </Link>
+          <Link href="/" className="flex md:hidden items-center space-x-2">
+  <Image
+    src="/images/053.jpg"
+    alt="Flexverse Logo"
+    width={180}
+    height={70}
+    className="h-12 w-auto"
+  />
+  <span className="text-sm text-primary">Your Text Here</span>
+</Link>
+
 
           {/* Mobile Menu */}
           <Sheet>

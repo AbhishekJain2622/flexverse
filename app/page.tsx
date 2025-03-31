@@ -6,7 +6,7 @@ import Link from "next/link"
 import { ArrowRight, ChevronRight, Mail, MapPin, Phone } from "lucide-react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-
+import { Download, FileText, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ClientCarousel from "@/components/client-carousel"
@@ -128,7 +128,7 @@ export default function Home() {
       {/* Hero Section */}
        {/* Hero Section */}
        <section className="relative h-[90vh] overflow-hidden bg-header" ref={heroRef}>
-        <div className="absolute  inset-0 opacity-30">
+        <div className="absolute  inset-0 opacity-80">
           <Image
             src="/images/hero.jpg"
             alt="Flexverse Hero"
@@ -298,18 +298,20 @@ export default function Home() {
 
             {/* Buttons */}
             <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-              <Button
-                size="lg"
-                className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
-              >
-                CATALOGUE
-              </Button>
+            <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf">
+        <Button variant="outline" className="bg-primary text-white w-full justify-start gap-2">
+          <Download className="h-4 w-4" />
+          <span>CATALOUGUE</span>
+        </Button>
+      </a>
+      <a href="/products/hydrophilic-swell-bar">
               <Button
                 size="lg"
                 className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
               >
                 KNOW MORE
               </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -380,11 +382,11 @@ export default function Home() {
               {/* <p className="text-header/90 hover:text-white"></p> */}
             </div>
           </div>
-          <div className="mt-12 text-center">
+          {/* <div className="mt-12 text-center">
             <Button size="lg" variant="outline" className="text-header border-header hover:bg-white/10" asChild>
               <Link href="/contact">Contact Us</Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
     </main>
