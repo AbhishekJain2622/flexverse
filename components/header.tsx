@@ -48,7 +48,8 @@ export default function Header() {
     >
       <div className="bg-white mx-auto flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
         
-      <Link href="/" className="hidden md:flex flex-col items-center ml-6 md:ml-14">
+<Link href="/" className="hidden md:flex items-center ml-6 md:ml-14 space-x-3">
+  {/* Logo */}
   <Image
     src="/images/053.jpg"
     alt="Flexverse Logo"
@@ -56,9 +57,15 @@ export default function Header() {
     height={90}
     className="h-12 md:h-16 w-auto max-w-[220px]"
   />
-  <span className="mt-1 text-sm text-primary">FLEXVERSE</span>
-</Link>
 
+  {/* Text beside Logo */}
+  <span className="text-[15px] md:text-[15px] font text-primary leading-tight">
+  FLEXVERSE <br />
+  POLYMERS <br />
+  PVT. LTD.
+</span>
+
+</Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
@@ -128,8 +135,12 @@ export default function Header() {
     width={180}
     height={70}
     className="h-12 w-auto"
-  />
-  <span className="text-sm text-primary">Your Text Here</span>
+  /> <span className="text-[15px] md:text-[15px] font text-primary leading-tight">
+  FLEXVERSE <br />
+  POLYMERS <br />
+  PVT. LTD.
+</span>
+  
 </Link>
 
 

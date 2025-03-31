@@ -10,81 +10,75 @@ export default function AboutPage() {
       {/* Hero Section */}
    
 
-<section 
-className="relative bg-primary py-20 text-white bg-cover bg-center bg-no-repeat" 
-style={{ backgroundImage: "url('/images/about5.png')" }}
+      <section 
+  className="relative bg-primary py-20 text-white bg-cover bg-center bg-no-repeat" 
+  style={{ backgroundImage: "url('/images/about5.png')" }}
 >
-<div className="container mx-auto px-4 text-center">
-  <h1 className="mb-6 text-4xl font-bold md:text-5xl">About Flexverse</h1>
-  <p className="text-lg text-white/90 md:text-xl max-w-3xl mx-auto">
-    Learn about our journey, our values, and the team that makes Flexverse a leader in innovative solutions.
-  </p>
-</div>
+  <div className="container mx-auto px-6 text-center">
+    <h1 className="mb-6 text-4xl font-bold md:text-5xl">About Flexverse</h1>
+    <p className="text-lg text-white/90 md:text-xl max-w-3xl mx-auto">
+      Learn about our journey, our values, and the team that makes Flexverse a leader in innovative solutions.
+    </p>
+  </div>
 </section>
-      {/* Company History */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          {/* <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Our Journey</h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-600">
-              From humble beginnings to industry leadership, our journey has been defined by innovation, perseverance,
-              and a commitment to excellence.
+
+<section className="py-20">
+  <div className="container mx-auto px-6">
+
+    <div className="relative">
+      {/* Timeline Line */}
+      <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-200 hidden md:block"></div>
+
+      <div className="relative z-10 space-y-16 md:space-y-20">
+        
+        {/* ABOUT COMPANY Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="text-center md:text-right px-4">
+            <h3 className="mb-2 text-xl font-semibold">ABOUT COMPANY</h3>
+            <p className="text-gray-600 font-normal">
+              Welcome to Flexverse Polymers—your trusted partner in providing innovative solutions for the construction and infrastructure sectors. Founded in 2022, Flexverse Polymers is the result of over three decades of industry expertise, built upon the legacy of our sister companies:
+              <a href="https://www.hitechrubber.in/bridge_bearings.html" className="text-primary"> Hitech Rubber Industries</a>, Mumbai (established in 1995), and Kanta Enterprises, Bengaluru (established in 1987). Together, our companies have been at the forefront of the construction, infrastructure, and waterproofing industries, delivering exceptional products and services across prestigious projects worldwide.
             </p>
-          </div> */}
-<div className="relative">
-  {/* Timeline Line */}
-  <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-200 hidden md:block"></div>
+          </div>
+          <div className="relative flex items-center justify-center">
+            <div className="absolute left-1/2 -top-4 hidden md:flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full bg-primary text-white"></div>
+            <Image
+              src="/images/about2.jpg"
+              alt="Flexverse Founding"
+              width={500}
+              height={300}
+              className="rounded-lg shadow-md w-full max-w-[500px] object-cover"
+            />
+          </div>
+        </div>
 
-  {/* Timeline Items */}
-  <div className="relative z-10 space-y-12">
-    
-    {/* Timeline Item 1 */}
-    <div className="flex flex-col items-center md:flex-row md:items-start">
-      <div className="w-full md:w-1/2 px-4 text-center md:text-right md:pr-12">
-        <h3 className="mb-2 text-xl font-semibold">ABOUT COMPANY</h3>
-        <p className="text-gray-600 font-normal">
-          Welcome to Flexverse Polymers— your trusted partner in providing innovative solutions for the construction and infrastructure sectors. Founded in 2022, Flexverse Polymers is the result of over three decades of industry expertise, built upon the legacy of our sister companies:<a href="https://www.hitechrubber.in/bridge_bearings.html" className="text-primary "> Hitech Rubber Industries </a>, Mumbai (established in 1995), and Kanta Enterprises, Bengaluru (established in 1987). Together, our companies have been at the forefront of construction, infrastructure, and waterproofing industries, delivering exceptional products and services across a diverse range of prestigious projects in India and around the world.
-        </p>
-      </div>
-      <div className="relative flex items-center justify-center w-full md:w-1/2 px-4">
-        <div className="absolute left-1/2 -top-4 hidden md:flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full bg-primary text-white"></div>
-        <Image
-          src="/images/about2.jpg"
-          alt="Flexverse Founding"
-          width={500}
-          height={300}
-          className="rounded-lg shadow-md w-full max-w-[500px]"
-        />
-      </div>
-    </div>
+        {/* OUR COMMITMENT TO QUALITY Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="relative flex items-center justify-center order-1 md:order-2">
+            <div className="absolute left-1/2 -top-4 hidden md:flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full bg-primary text-white"></div>
+            <Image
+              src="/images/about3.jpg"
+              alt="Flexverse Expansion"
+              width={500}
+              height={300}
+              className="rounded-lg shadow-md w-full max-w-[500px] object-cover"
+            />
+          </div>
+          <div className="text-center md:text-left px-4 order-2 md:order-1">
+            <h3 className="mb-2 text-xl font-semibold">OUR COMMITMENT TO QUALITY</h3>
+            <p className="text-gray-600 font-normal">
+              At Flexverse Polymers, we understand that choosing the right products and solutions is crucial to the success of any construction project. That’s why we are committed to delivering premium products and services that meet the unique needs of our clients, every step of the way. 
+              Whether you’re working on large-scale infrastructure projects or specialized construction requirements, quality is at the core of our approach. We rigorously test all of our products at our in-house labs and NABL-approved facilities to ensure they meet and exceed both national and international standards. This means that you can trust our products to stand the test of time, even in the toughest conditions.
+            </p>
+          </div>
+        </div>
 
-    {/* Timeline Item 2 */}
-    <div className="flex flex-col items-center md:flex-row md:items-start">
-      <div className="w-full md:w-1/2 order-2 md:order-1 px-4">
-        <h3 className="mb-2 text-xl font-semibold text-center md:text-left">OUR COMMITMENT TO QUALITY</h3>
-        <p className="text-gray-600 text-center font-normal md:text-left">
-          At Flexverse Polymers, we understand that choosing the right products and solutions is crucial to the success of any construction project. That’s why we are committed to delivering premium products and services that meet the unique needs of our clients, every step of the way. Whether you’re working on large-scale infrastructure projects or specialized construction requirements, quality is at the core of our approach. We rigorously test all of our products at our in-house labs and NABL-approved facilities, to ensure they meet and exceed both national and international standards. This means that you can trust our products are built to stand the test of time, even in the toughest conditions.
-        </p>
-      </div>
-      <div className="relative flex items-center justify-center w-full md:w-1/2 px-4">
-        <div className="absolute left-1/2 -top-4 hidden md:flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full bg-primary text-white"></div>
-        <Image
-          src="/images/about3.jpg"
-          alt="Flexverse Expansion"
-          width={500}
-          height={300}
-          className="rounded-lg shadow-md w-full max-w-[500px]"
-        />
       </div>
     </div>
 
   </div>
-</div>
+</section>
 
-        </div>
-      </section>
-
-   
 
       {/* Team Section */}
       <section className="py-20">

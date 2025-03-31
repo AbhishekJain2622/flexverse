@@ -144,7 +144,7 @@ export default function Home() {
           <p className="mt-6 max-w-2xl px-4 text-lg leading-relaxed text-white/90 md:text-xl">
             Flexverse is your partner in creating flexible solutions for today's complex business environment
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          {/* <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Button
               size="lg"
               className="gradient-bg font-medium hover:opacity-90 text-header relative overflow-hidden group animate-highlight"
@@ -165,10 +165,11 @@ export default function Home() {
                 <span className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </Button>
-            {/* <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10" asChild>
+           
+          </div> */}
+           {/* <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10" asChild>
               <Link href="/contact">Contact Us</Link>
             </Button> */}
-          </div>
         </div>
         <div className="absolute bottom-8 left-0 right-0 flex justify-center">
           <div className="flex animate-bounce rounded-full bg-white/20 p-2">
@@ -299,7 +300,8 @@ export default function Home() {
             {/* Buttons */}
             <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
             <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf">
-        <Button variant="outline" className="bg-primary text-white w-full justify-start gap-2">
+        <Button  className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
+        >
           <Download className="h-4 w-4" />
           <span>CATALOUGUE</span>
         </Button>
