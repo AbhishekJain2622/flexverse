@@ -87,6 +87,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        
 
         {/* Copyright */}
         <div className="mt-12 border-t border-white/20 pt-6 text-center">

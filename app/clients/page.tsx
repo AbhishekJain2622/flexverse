@@ -162,12 +162,12 @@ export default function ClientsPage() {
                 <span className="relative z-10">Contact Us</span>
                 <span className="absolute inset-0 bg-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </a>
-              <a
+              {/* <a
                 href="/products"
                 className="inline-flex items-center justify-center rounded-md border border-white px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors"
               >
                 Explore Our Products
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

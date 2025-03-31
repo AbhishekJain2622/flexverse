@@ -213,9 +213,9 @@ export default function HydrophilicSwellBarPage() {
               <Button size="lg" className="bg-white text-primary hover:bg-white/90" asChild>
                 <Link href="/contact">Request a Quote</Link>
               </Button>
-              <Button size="lg" variant="outline" className="text-header border-white hover:bg-white/10" asChild>
+              {/* <Button size="lg" variant="outline" className="text-header border-white hover:bg-white/10" asChild>
                 <Link href="/contact">Technical Support</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
