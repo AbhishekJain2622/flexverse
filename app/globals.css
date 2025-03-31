@@ -69,16 +69,17 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-montserrat);
+    font-family: var(--font-teko), sans-serif;
     font-weight: 700;
   }
+  
   p,
   a,
   button h3,
   h4,
   h5,
   h6 {
-    font-family: var(--font-montserrat);
+    font-family: var(--font-roboto);
     font-weight: 700;
   }
   p,
@@ -88,7 +89,7 @@
   textarea,
   select,
   li {
-    font-family: var(--font-inter);
+    font-family: var(--font-roboto);
   }
 }
 

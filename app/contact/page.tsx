@@ -54,7 +54,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section
   className="relative bg-primary py-20 text-white bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/images/contact5.png')" }} // Replace with your actual image path
+  style={{ backgroundImage: "url('/images/Untitled.png')" }} // Replace with your actual image path
 >
   <div className="container mx-auto px-4">
     <div className="mx-auto max-w-3xl text-center">

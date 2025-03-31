@@ -299,22 +299,25 @@ export default function Home() {
 
             {/* Buttons */}
             <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-            <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf">
-        <Button  className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
-        >
-          <Download className="h-4 w-4" />
-          <span>CATALOUGUE</span>
-        </Button>
-      </a>
-      <a href="/products/hydrophilic-swell-bar">
-              <Button
-                size="lg"
-                className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
-              >
-                KNOW MORE
-              </Button>
-              </a>
-            </div>
+  <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf" className="w-full sm:w-auto">
+    <Button 
+      size="lg" 
+      className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
+    >
+      <span>CATALOGUE</span>
+    </Button>
+  </a>
+  
+  <a href="/products/hydrophilic-swell-bar" className="w-full sm:w-auto">
+    <Button 
+      size="lg" 
+      className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
+    >
+      KNOW MORE
+    </Button>
+  </a>
+</div>
+
           </div>
         </div>
       ))}
@@ -346,52 +349,53 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="gradient-bg py-20 text-header">
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">Get In Touch</h2>
-            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-header/90">
-              Have questions or want to learn more about our products? Contact us today!
-            </p>
-          </div>
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="flex flex-col items-center rounded-lg bg-white/10 p-6 text-center">
-              <div className="mb-4 rounded-full bg-white/20 p-4">
-                <Phone className="h-6 w-6" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Phone</h3>
-              <a href="tel:+919322288578" className="hover:text-white transition">
-                  +91 9322288578
-                </a>
-              {/* <p className="text-header/90">+91 9876543210</p> */}
-            </div>
-            <div className="flex flex-col items-center rounded-lg bg-white/10 p-6 text-center">
-              <div className="mb-4 rounded-full bg-white/20 p-4">
-                <Mail className="h-6 w-6" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Email</h3>
-              <a href="mailto:info@flexverse.in" className="hover:text-white transition">
-                  info@flexverse.in
-                </a>
-              {/* <p className="text-header/90">support@flexverse.in</p> */}
-            </div>
-            <div className="flex flex-col items-center rounded-lg bg-white/10 p-6 text-center">
-              <div className="mb-4 rounded-full bg-white/20 p-4">
-                <MapPin className="h-6 w-6" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Address</h3>
-              <p className="text-header/90 hover:text-white">Inizio, 201, Cardinal Gracious Road, Chakala.Andheri East, Mumbai 400049</p>
-              {/* <p className="text-header/90 hover:text-white"></p> */}
-            </div>
-          </div>
-          {/* <div className="mt-12 text-center">
-            <Button size="lg" variant="outline" className="text-header border-header hover:bg-white/10" asChild>
-              <Link href="/contact">Contact Us</Link>
-            </Button>
-          </div> */}
-        </div>
-      </section>
+    
     </main>
   )
 }
 
+// <section className="gradient-bg py-20 text-header">
+// <div className="container mx-auto px-4">
+//   <div className="mb-12 text-center">
+//     <h2 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">Get In Touch</h2>
+//     <p className="mx-auto max-w-2xl text-lg leading-relaxed text-header/90">
+//       Have questions or want to learn more about our products? Contact us today!
+//     </p>
+//   </div>
+//   <div className="grid gap-8 md:grid-cols-3">
+//     <div className="flex flex-col items-center rounded-lg bg-white/10 p-6 text-center">
+//       <div className="mb-4 rounded-full bg-white/20 p-4">
+//         <Phone className="h-6 w-6" />
+//       </div>
+//       <h3 className="mb-2 text-xl font-semibold">Phone</h3>
+//       <a href="tel:+919322288578" className="hover:text-white transition">
+//           +91 9322288578
+//         </a>
+//       <p className="text-header/90">+91 9876543210</p>
+//     </div>
+//     <div className="flex flex-col items-center rounded-lg bg-white/10 p-6 text-center">
+//       <div className="mb-4 rounded-full bg-white/20 p-4">
+//         <Mail className="h-6 w-6" />
+//       </div>
+//       <h3 className="mb-2 text-xl font-semibold">Email</h3>
+//       <a href="mailto:info@flexverse.in" className="hover:text-white transition">
+//           info@flexverse.in
+//         </a>
+//       <p className="text-header/90">support@flexverse.in</p>
+//     </div>
+//     <div className="flex flex-col items-center rounded-lg bg-white/10 p-6 text-center">
+//       <div className="mb-4 rounded-full bg-white/20 p-4">
+//         <MapPin className="h-6 w-6" />
+//       </div>
+//       <h3 className="mb-2 text-xl font-semibold">Address</h3>
+//       <p className="text-header/90 hover:text-white">Inizio, 201, Cardinal Gracious Road, Chakala.Andheri East, Mumbai 400049</p>
+//       <p className="text-header/90 hover:text-white"></p>
+//     </div>
+//   </div>
+//   <div className="mt-12 text-center">
+//     <Button size="lg" variant="outline" className="text-header border-header hover:bg-white/10" asChild>
+//       <Link href="/contact">Contact Us</Link>
+//     </Button>
+//   </div>
+// </div>
+// </section>

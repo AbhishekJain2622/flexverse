@@ -43,7 +43,7 @@ export default function RootLayout({
         {/* If using ICO: */}
         {/* <link rel="icon" href="/favicon.ico" type="image/x-icon" /> */}
       </head>
-      <body className="font-sans">
+      <body >
         <ThemeProvider attribute="class" defaultTheme="">
           <Header />
           {children}
