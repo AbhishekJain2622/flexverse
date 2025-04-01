@@ -18,7 +18,10 @@ export default function Footer() {
               className="mb-4 h-25 w-30"
             />
             <div className="flex space-x-4">
-              <Link href="#" className="rounded-full bg-white/10 p-2 text-white hover:bg-white/20">
+            <Link 
+                href="https://www.linkedin.com/company/flexverse-polymers-private-limited/" 
+                className="rounded-full bg-white/10 p-2 text-white hover:bg-primary transition"
+              >
                 <Linkedin className="h-5 w-5" />
               </Link>
             </div>
