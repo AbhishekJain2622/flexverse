@@ -39,7 +39,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-white/90 hover:text-primary">
+                <Link href="/products/hydrophilic-swell-bar" className="text-white/90 hover:text-primary">
                   Products
                 </Link>
               </li>
