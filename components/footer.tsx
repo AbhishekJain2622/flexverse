@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Image
-              src="untitled.png"
+              src="/Untitled.png"
               alt="Flexverse Logo"
               width={150}
               height={30}
