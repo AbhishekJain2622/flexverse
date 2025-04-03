@@ -127,7 +127,7 @@ export default function Home() {
     <main>
       {/* Hero Section */}
        {/* Hero Section */}
-       <section className="relative h-[90vh] overflow-hidden bg-header" ref={heroRef}>
+       <section className="relative h-[90vh]  overflow-hidden bg-header" ref={heroRef}>
         <div className="absolute  inset-0 opacity-80">
           <Image
             src="/images/hero.jpg"
@@ -138,10 +138,10 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-          <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
+          <h1 className="text-4xl font-bold leading-tight font-['Teko'] tracking-tight md:text-6xl">
             <span className="gradient-text">Innovative Solutions</span> for Modern Challenges
           </h1>
-          <p className="mt-6 max-w-2xl px-4 text-lg leading-relaxed text-white/90 md:text-xl">
+          <p className="mt-6 max-w-2xl px-4 text-lg font-['Roboto'] leading-relaxed text-white/90 md:text-xl">
             Flexverse is your partner in creating flexible solutions for today's complex business environment
           </p>
           {/* <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -179,7 +179,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-background" ref={aboutRef}>
+      <section className="py-20  bg-background" ref={aboutRef}>
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center lg:flex-row lg:items-start lg:gap-16">
             <div className="mb-10 lg:mb-0 lg:w-1/2">
@@ -192,11 +192,11 @@ export default function Home() {
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="mb-6 text-3xl font-bold tracking-tight gradient-text md:text-4xl"> Welcome to Flexverse</h2>
-              <p className="mb-4 text-[20px] leading-relaxed text-foreground/90 font-normal">
+              <h2 className="mb-6 text-3xl font-bold font-['Teko'] tracking-tight gradient-text md:text-4xl"> Welcome to Flexverse</h2>
+              <p className="mb-4 text-[20px] font-['Teko'] leading-relaxed text-foreground/90 font-normal">
   Trusted Excellence in High-Quality Construction Products
 </p>
-<p className="mb-6 text-[17px] leading-relaxed text-foreground/90 font-normal">
+<p className="mb-6 text-[17px] font-['roboto'] leading-relaxed text-foreground/90 font-normal">
   With over 30 years of expertise from Hitech Rubber Industries (Mumbai) and Kanta Enterprises (Bengaluru), Flexverse Polymers is your trusted partner for high-quality construction products. Driven by innovation and a commitment to excellence, we ensure our products meet the highest national and international standards, undergoing rigorous quality checks in NABL-approved labs. At Flexverse, we take pride in delivering exceptional customer service, offering reliable solutions that stand the test of time, even in the toughest conditions.
 </p>
 
@@ -221,8 +221,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">Our Vision</h3>
-                    <p className="text-foreground/80">To redefine industry standards</p>
+                    <h3 className="text-lg font-semibold font-['Teko']">Our Vision</h3>
+                    <p className="text-foreground/80 font-['Teko']">To redefine industry standards</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -245,13 +245,13 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">Our Values</h3>
-                    <p className="text-foreground/80">Innovation, Quality, Integrity</p>
+                    <h3 className="text-lg font-semibold font-['Teko']">Our Values</h3>
+                    <p className="text-foreground/80 font-['Teko']">Innovation, Quality, Integrity</p>
                   </div>
                 </div>
               </div>
               <Button className="mt-6 gradient-bg text-header hover:opacity-90" asChild>
-                <Link href="/about">Learn More Flexverse</Link>
+                <Link href="/about font-['Teko']">Learn More Flexverse</Link>
               </Button>
             </div>
           </div>
@@ -262,16 +262,16 @@ export default function Home() {
   <div className="container mx-auto px-6 md:px-12 lg:px-16">
     {/* Heading */}
     <div className="mb-12 text-center">
-      <h2 className="mb-3 text-3xl font-bold tracking-tight gradient-text md:text-4xl">
+      <h2 className="mb-3 text-3xl font-bold font-['Teko'] tracking-tight gradient-text md:text-4xl">
         OUR PRODUCTS
       </h2>
-      <p className="mx-auto max-w-2xl text-lg leading-relaxed text-foreground/90">
+      <p className="mx-auto max-w-2xl font-['Teko'] text-lg leading-relaxed text-foreground/90">
         Innovating for a Better Tomorrow
       </p>
     </div>
 
     {/* Product Display */}
-    <div className="grid grid-cols-1 gap-12 lg:gap-16">
+    <div className="grid grid-cols-1  gap-12 lg:gap-16">
       {products.map((product, index) => (
         <div
           key={index}
@@ -292,17 +292,17 @@ export default function Home() {
 
           {/* Text Section */}
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h3 className="mb-2 text-2xl font-semibold text-primary">
+            <h3 className="mb-2 text-2xl font-semibold font-['Teko'] text-primary">
               {product.title}
             </h3>
-            <p className="text-primary-700  font-normal text-[18px] leading-relaxed">{product.description}</p>
+            <p className="text-primary-700  font-['roboto'] font-normal text-[18px] leading-relaxed">{product.description}</p>
 
             {/* Buttons */}
             <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
   <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf" className="w-full sm:w-auto">
     <Button 
       size="lg" 
-      className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
+      className="bg-primary font-['Teko'] text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
     >
       <span>CATALOGUE</span>
     </Button>
@@ -311,7 +311,7 @@ export default function Home() {
   <a href="/products/hydrophilic-swell-bar" className="w-full sm:w-auto">
     <Button 
       size="lg" 
-      className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
+      className="bg-primary font-['Teko'] text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
     >
       KNOW MORE
     </Button>
@@ -330,8 +330,8 @@ export default function Home() {
       <section className="py-20 bg-background" ref={clientsRef}>
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-3 text-3xl font-bold tracking-tight gradient-text md:text-4xl">Our Clients</h2>
-            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-foreground/90">
+            <h2 className="mb-3 text-3xl font-bold tracking-tight gradient-text font-['Teko'] md:text-4xl">Our Clients</h2>
+            <p className="mx-auto max-w-2xl font-['Teko'] text-lg leading-relaxed text-foreground/90">
               We're proud to work with businesses across various industries
             </p>
           </div>
@@ -340,7 +340,7 @@ export default function Home() {
 
           <div className="mt-8 text-center">
             <Button variant="link" className="text-primary" asChild>
-              <Link href="/clients" className="flex items-center justify-center gap-2">
+              <Link href="/clients" className="flex items-center justify-center font-[teko] gap-2">
                 View All Clients <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>

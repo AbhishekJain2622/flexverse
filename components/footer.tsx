@@ -29,8 +29,8 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="mb-4 text-xl font-bold text-primary">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="mb-4 text-xl font-bold text-primary font-['Teko']">Quick Links</h3>
+            <ul className="space-y-2 font-['Roboto']">
               <li>
                 <Link href="/" className="text-white/90 hover:text-primary">
                   Home
@@ -66,8 +66,8 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="mb-4 text-xl font-bold text-primary">Contact Us</h3>
-            <ul className="space-y-4">
+            <h3 className="mb-4 text-xl font-bold text-primary font-['Teko']">Contact Us</h3>
+            <ul className="space-y-4 font-['Roboto']">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 text-primary" />
                 <span className="text-white/100">
@@ -93,7 +93,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 border-t border-white/20 pt-6 text-center">
-          <p className="text-white/70">
+          <p className="text-white/70 font-['Teko']">
             Copyright © {new Date().getFullYear()} Flexverse. All rights reserved. Powered by 
             <a href="https://codestudios.in/" className="hover:underline text-primary"> CodeStudios</a>
           </p>

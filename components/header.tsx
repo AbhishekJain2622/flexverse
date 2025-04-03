@@ -59,7 +59,7 @@ export default function Header() {
   />
 
   {/* Text beside Logo */}
-  <span className="text-[15px] md:text-[15px] font text-primary leading-tight">
+  <span className="text-[15px] md:text-[15px] font-['Teko'] text-primary leading-tight">
   FLEXVERSE <br />
   POLYMERS <br />
   PVT. LTD.
@@ -68,7 +68,7 @@ export default function Header() {
 </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:block">
+        <nav className="hidden md:block font-['Teko']">
           <ul className="flex items-center space-x-4 lg:space-x-6">
             {navItems.map((item) => (
               <li key={item.label} className="relative">
@@ -76,8 +76,8 @@ export default function Header() {
                   <div>
                     <button
                       onClick={() => toggleDropdown(item.label)}
-                      className="flex items-center px-4 py-2 text-base lg:text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
-                    >
+                      className="flex items-center px-4 py-2 text-base lg:text-lg  font-semibold text-gray-800 dark:text-white hover:text-primary"
+                      >
                       {item.label}
                       <ChevronDown
                         className={`ml-1 h-5 w-5 transition-transform ${
@@ -117,7 +117,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Button
             size="lg"
-            className="bg-primary text-white hover:opacity-90 font-semibold px-5 py-2"
+            className="bg-primary text-white font-['Teko'] hover:opacity-90 font-semibold px-5 py-2"
             asChild
           >
             <Link href="/contact">Request a Quote</Link>
@@ -125,7 +125,7 @@ export default function Header() {
         </div>
 
         {/* ✅ Mobile Navigation & Logo - Only visible on small screens */}
-        <div className="md:hidden flex items-center justify-between w-full px-4">
+        <div className="md:hidden flex font-['Teko'] items-center justify-between w-full px-4">
           
           {/* ✅ Mobile Logo - Only visible on small screens */}
           <Link href="/" className="flex md:hidden items-center space-x-2">
@@ -135,7 +135,7 @@ export default function Header() {
     width={180}
     height={70}
     className="h-12 w-auto"
-  /> <span className="text-[15px] md:text-[15px] font text-primary leading-tight">
+  /> <span className="text-[15px] font-['Teko'] md:text-[15px] font text-primary leading-tight">
   FLEXVERSE <br />
   POLYMERS <br />
   PVT. LTD.
@@ -152,7 +152,7 @@ export default function Header() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[350px] bg-white dark:bg-gray-900">
+            <SheetContent side="right" className="w-[300px] sm:w-[350px] font-['Teko'] bg-white dark:bg-gray-900">
               <div className="mt-6 flex flex-col space-y-3">
                 {navItems.map((item) => (
                   <div key={item.label}>

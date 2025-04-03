@@ -58,8 +58,8 @@ export default function ContactPage() {
 >
   <div className="container mx-auto px-4">
     <div className="mx-auto max-w-3xl text-center">
-      <h1 className="mb-6 text-4xl font-bold md:text-5xl">Contact Us</h1>
-      <p className="text-lg text-white/90 md:text-xl">
+      <h1 className="mb-6 text-4xl font-bold md:text-5xl font-['Teko']">Contact Us</h1>
+      <p className="text-lg text-white/90 md:text-xl font-['roboto']">
         Have questions or want to learn more about our products? Get in touch with our team.
       </p>
     </div>
@@ -75,11 +75,11 @@ export default function ContactPage() {
           <div className="grid gap-10 lg:grid-cols-2">
             {/* Contact Form */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-primary md:text-3xl">Send Us a Message</h2>
+              <h2 className="mb-6 text-2xl font-bold text-primary md:text-3xl font-['Teko']">Send Us a Message</h2>
               <Card>
                 <CardContent className="p-6">
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid gap-6 md:grid-cols-2">
+                  <form onSubmit={handleSubmit} className="space-y-6 font-['roboto']">
+                    <div className="grid gap-6 md:grid-cols-2 ">
                       <div className="space-y-2">
                         <Label htmlFor="name">Your Name</Label>
                         <Input
@@ -178,9 +178,9 @@ export default function ContactPage() {
 
             {/* Contact Information */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-primary md:text-3xl">Get in Touch</h2>
+              <h2 className="mb-6 text-2xl font-bold text-primary md:text-3xl font-['teko']">Get in Touch</h2>
 
-              <div className="mb-8 space-y-6">
+              <div className="mb-8 space-y-6 font-['roboto']">
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
                     <MapPin className="h-6 w-6" />
@@ -239,8 +239,8 @@ export default function ContactPage() {
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Frequently Asked Questions</h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+            <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl font-['Teko']">Frequently Asked Questions</h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600 font-['roboto']">
               Find answers to common questions about our products and services
             </p>
           </div>
@@ -274,8 +274,8 @@ export default function ContactPage() {
               },
             ].map((faq, index) => (
               <div key={index} className="rounded-lg bg-white p-6 shadow-md">
-                <h3 className="mb-3 text-lg font-semibold">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+                <h3 className="mb-3 text-lg font-semibold font-['teko']">{faq.question}</h3>
+                <p className="text-gray-600 font-['roboto']">{faq.answer}</p>
               </div>
             ))}
           </div>
