@@ -46,8 +46,8 @@ export default function ClientsPage() {
 >
   <div className="container mx-auto px-4 relative z-10">
     <div className="mx-auto max-w-3xl text-center">
-      <h1 className="mb-6 text-4xl font-bold md:text-5xl font-['Teko']">Our Clients</h1>
-      <p className="text-lg text-white font-['roboto'] md:text-xl">
+      <h1 className="mb-6 text-xl font-bold md:text-6xl font-['Teko']">Our Clients</h1>
+      <p className=" text-white font-['roboto'] md:text-[20px]">
         We're proud to work with leading organizations across various industries
       </p>
     </div>
@@ -73,8 +73,8 @@ export default function ClientsPage() {
       <section className="py-16 bg-secondary/5">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-primary font-['Teko']">Our Valued Partners</h2>
-            <p className="mx-auto max-w-3xl text-lg font-['roboto'] text-foreground/90">
+            <h2 className="mb-4 text-[40px] font-bold text-primary font-['Teko']">Our Valued Partners</h2>
+            <p className="mx-auto max-w-5xl text-lg font-['roboto'] text-foreground/90">
               We're proud to collaborate with these industry-leading organizations
             </p>
           </div>
@@ -150,8 +150,8 @@ export default function ClientsPage() {
       <section className="gradient-bg py-16 text-white">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-4 text-3xl font-bold font-['Teko']">Join Our Growing List of Satisfied Clients</h2>
-            <p className="mb-8 text-lg text-white/90 font-['roboto']">
+            <h2 className="mb-4 text-[40px] font-bold font-['Teko']">Join Our Growing List of Satisfied Clients</h2>
+            <p className="mb-8 text-[18px] text-white/90 font-['roboto']">
               Contact us today to discuss how our solutions can benefit your next project
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">

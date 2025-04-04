@@ -58,8 +58,8 @@ export default function ContactPage() {
 >
   <div className="container mx-auto px-4">
     <div className="mx-auto max-w-3xl text-center">
-      <h1 className="mb-6 text-4xl font-bold md:text-5xl font-['Teko']">Contact Us</h1>
-      <p className="text-lg text-white/90 md:text-xl font-['roboto']">
+      <h1 className="mb-6 text-5xl font-bold md:text-6xl font-['Teko']">Contact Us</h1>
+      <p className="text-[30px] text-white/90 md:text-[25px] font-['roboto']">
         Have questions or want to learn more about our products? Get in touch with our team.
       </p>
     </div>
@@ -75,10 +75,10 @@ export default function ContactPage() {
           <div className="grid gap-10 lg:grid-cols-2">
             {/* Contact Form */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-primary md:text-3xl font-['Teko']">Send Us a Message</h2>
+              <h2 className="mb-6 text-3xl font-bold text-primary md:text-4xl font-['Teko']">Send Us a Message</h2>
               <Card>
                 <CardContent className="p-6">
-                  <form onSubmit={handleSubmit} className="space-y-6 font-['roboto']">
+                  <form onSubmit={handleSubmit} className="space-y-6 text-[30px] font-['roboto']">
                     <div className="grid gap-6 md:grid-cols-2 ">
                       <div className="space-y-2">
                         <Label htmlFor="name">Your Name</Label>
@@ -178,7 +178,7 @@ export default function ContactPage() {
 
             {/* Contact Information */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-primary md:text-3xl font-['teko']">Get in Touch</h2>
+              <h2 className="mb-6 text-3xl font-bold text-primary md:text-4xl font-['teko']">Get in Touch</h2>
 
               <div className="mb-8 space-y-6 font-['roboto']">
                 <div className="flex items-start gap-4">
@@ -186,9 +186,9 @@ export default function ContactPage() {
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="mb-2 text-lg font-semibold">Our Location</h3>
-                    <p className="text-gray-400">Inizio, 201, Cardinal Gracious Road, Chakala.</p>
-                    <p className="text-gray-400">Andheri East, Mumbai 400049</p>
+                    <h3 className="mb-2 text-[25px] font-semibold">Our Location</h3>
+                    <p className="text-gray-400 text-[20px]">Inizio, 201, Cardinal Gracious Road, Chakala.</p>
+                    <p className="text-gray-400 text-[20px]">Andheri East, Mumbai 400049</p>
                   </div>
                 </div>
 
@@ -197,8 +197,8 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="mb-2 text-lg font-semibold">Phone Number</h3>
-                    <a href="tel:+919322288578" className="text-gray-400">
+                    <h3 className="mb-2 text-[25px] font-semibold">Phone Number</h3>
+                    <a href="tel:+919322288578" className="text-gray-400 text-[20px]">
                   +91 9322288578
                 </a>
                     {/* <p className="text-gray-600">+91 9876543210</p> */}
@@ -210,8 +210,8 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="mb-2 text-lg font-semibold">Email Address</h3>
-                    <a href="mailto:info@flexverse.in" className="text-gray-400">
+                    <h3 className="mb-2 text-[25px] font-semibold">Email Address</h3>
+                    <a href="mailto:info@flexverse.in" className="text-gray-400 text-[20px]">
                   info@flexverse.in
                 </a>
                     {/* <p className="text-gray-600">support@flexverse.in</p> */}
@@ -239,8 +239,8 @@ export default function ContactPage() {
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl font-['Teko']">Frequently Asked Questions</h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-600 font-['roboto']">
+            <h2 className="mb-4 text-4xl font-bold text-primary md:text-5xl font-['Teko']">Frequently Asked Questions</h2>
+            <p className="mx-auto max-w-4xl text-[25px] text-gray-600 font-['roboto']">
               Find answers to common questions about our products and services
             </p>
           </div>
@@ -274,8 +274,8 @@ export default function ContactPage() {
               },
             ].map((faq, index) => (
               <div key={index} className="rounded-lg bg-white p-6 shadow-md">
-                <h3 className="mb-3 text-lg font-semibold font-['teko']">{faq.question}</h3>
-                <p className="text-gray-600 font-['roboto']">{faq.answer}</p>
+                <h3 className="mb-3 text-[30px] font-semibold font-['teko']">{faq.question}</h3>
+                <p className="text-gray-600 text-[18px] font-['roboto']">{faq.answer}</p>
               </div>
             ))}
           </div>
