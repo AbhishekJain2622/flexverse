@@ -188,7 +188,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="mb-2 text-[25px] font-semibold">Our Location</h3>
                     <p className="text-gray-400 text-[20px]">Inizio, 201, Cardinal Gracious Road, Chakala.</p>
-                    <p className="text-gray-400 text-[20px]">Andheri East, Mumbai 400049</p>
+                    <p className="text-gray-400 text-[20px]">Andheri East, Mumbai 400099</p>
                   </div>
                 </div>
 

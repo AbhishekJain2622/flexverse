@@ -72,7 +72,7 @@ export default function Footer() {
                 <MapPin className="mt-1 h-5 w-5 text-primary" />
                 <span className="text-white/100">
                 Inizio, 201, Cardinal Gracious Road, Chakala.<br />
-                Andheri East, Mumbai 400049
+                Andheri East, Mumbai 400099
                 </span>
               </li>
               <li className="flex items-center gap-3">
