@@ -38,8 +38,8 @@ export default function ValuesSection() {
     <section className="bg-gray-50 py-20">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl font-['Teko']">Our Core Values</h2>
-          <p className="mx-auto max-w-3xl text-lg font-['roboto'] text-gray-600">
+          <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl font-['teko','Sans-Serif']">Our Core Values</h2>
+          <p className="mx-auto max-w-3xl text-lg font-['roboto','Sans-Serif'] text-gray-600">
             Our values guide every decision we make and define who we are as a company
           </p>
         </div>
@@ -50,8 +50,8 @@ export default function ValuesSection() {
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
                 {value.icon}
               </div>
-              <h3 className="mb-2 text-xl font-semibold font-heading font-['Teko']">{value.title}</h3>
-              <p className="text-gray-600 font-sans font-['roboto']">{value.description}</p>
+              <h3 className="mb-2 text-xl font-semibold font-heading font-['teko','Sans-Serif']">{value.title}</h3>
+              <p className="text-gray-600 font-sans font-['roboto','Sans-Serif']">{value.description}</p>
             </div>
           ))}
         </div>

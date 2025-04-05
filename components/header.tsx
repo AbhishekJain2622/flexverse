@@ -26,6 +26,7 @@ const navItems = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [sheetOpen, setSheetOpen] = useState(false); // For mobile sheet
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,166 +42,168 @@ export default function Header() {
 
   return (
     <header
-    className={cn(
-      "fixed top-0 z-50 w-full transition-all duration-300",
-      scrolled ? "bg-white dark:bg-gray-900/90 shadow-md" : "bg-transparent"
-    )}
-  >
-    <div className="bg-white mx-auto flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
-      
-      <Link href="/" className="hidden md:flex items-center ml-6 md:ml-14 space-x-3">
-        {/* Logo */}
-        <Image
-          src="/images/053.jpg"
-          alt="Flexverse Logo"
-          width={220}
-          height={90}
-          className="h-12 md:h-16 w-auto max-w-[220px]"
-        />
-  
-        {/* Text beside Logo */}
-        <span className="text-[15px] md:text-[18px] font-['Teko'] text-primary leading-tight">
-          FLEXVERSE <br />
-          POLYMERS <br />
-          PVT. LTD.
-        </span>
-      </Link>
-  
-      {/* Desktop Navigation */} 
-      <nav className="hidden md:block font-['Teko']">
-        <ul className="flex items-center space-x-5 lg:space-x-8">
-          {navItems.map((item) => (
-            <li key={item.label} className="relative">
-              {item.children ? (
-                <div>
-                  <button
-                    onClick={() => toggleDropdown(item.label)}
-                    className="flex items-center px-5 py-3 text-lg lg:text-xl font-semibold text-gray-800 dark:text-white hover:text-primary"
-                  >
-                    {item.label}
-                    <ChevronDown
-                      className={`ml-1 h-6 w-6 transition-transform ${
-                        activeDropdown === item.label ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                  {activeDropdown === item.label && (
-                    <div className="absolute left-0 top-full mt-2 w-64 rounded-md bg-white dark:bg-gray-800 p-3 shadow-lg">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.label}
-                          href={child.href}
-                          className="block rounded-md px-5 py-3 text-lg text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-                          onClick={() => setActiveDropdown(null)}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  href={item.href}
-                  className="block px-5 py-3 text-lg lg:text-xl font-semibold text-gray-800 dark:text-white hover:text-primary"
-                >
-                  {item.label}
-                </Link>
-              )}
-            </li>
-          ))}
-        </ul>
-      </nav>
-  
-      {/* Contact Button */}
-      <div className="hidden md:block">
-        <Button
-          size="lg"
-          className="bg-primary text-white font-['Teko'] hover:opacity-90 font-semibold text-lg lg:text-xl px-6 py-3"
-          asChild
-        >
-          <Link href="/contact">Request a Quote</Link>
-        </Button>
-      </div>
-  
-      {/* ✅ Mobile Navigation & Logo - Only visible on small screens */}
-      <div className="md:hidden flex font-['Teko'] items-center justify-between w-full px-4">
-        
-        {/* ✅ Mobile Logo - Only visible on small screens */}
-        <Link href="/" className="flex md:hidden items-center space-x-2">
+      className={cn(
+        "fixed top-0 z-50 w-full transition-all duration-300",
+        scrolled ? "bg-white dark:bg-gray-900/90 shadow-md" : "bg-transparent"
+      )}
+    >
+      <div className="bg-white mx-auto flex h-20 md:h-24 items-center justify-between px-4 md:px-6">
+        {/* Logo Desktop */}
+        <Link href="/" className="hidden md:flex items-center ml-6 md:ml-14 space-x-3">
           <Image
             src="/images/053.jpg"
             alt="Flexverse Logo"
-            width={180}
-            height={70}
-            className="h-12 w-auto"
-          /> 
-          <span className="text-[18px] font-['Teko'] md:text-[20px] text-primary leading-tight">
+            width={220}
+            height={90}
+            className="h-12 md:h-16 w-auto max-w-[220px]"
+          />
+          <span className="text-[15px] md:text-[18px] font-['Teko','Sans-Serif'] text-primary leading-tight">
             FLEXVERSE <br />
-            POLYMERS <br />
-            PVT. LTD.
+            POLYMERS PVT. LTD.
           </span>
         </Link>
-  
-        {/* Mobile Menu */}
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon">
-              <Menu className="h-8 w-8 text-gray-800 dark:text-white" />
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[350px] font-['Teko'] bg-white dark:bg-gray-900">
-            <div className="mt-6 flex flex-col space-y-3">
-              {navItems.map((item) => (
-                <div key={item.label}>
-                  {item.children ? (
-                    <div className="mb-2">
-                      <button
-                        onClick={() => toggleDropdown(item.label)}
-                        className="flex w-full items-center justify-between py-4 text-lg font-semibold text-gray-800 dark:text-white"
-                      >
-                        {item.label}
-                        <ChevronDown
-                          className={`h-7 w-7 transition-transform ${
-                            activeDropdown === item.label ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
-                      {activeDropdown === item.label && (
-                        <div className="ml-4 mt-2 space-y-2 border-l-2 border-primary pl-4">
-                          {item.children.map((child) => (
-                            <Link
-                              key={child.label}
-                              href={child.href}
-                              className="block py-3 text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
-                            >
-                              {child.label}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className="block py-4 text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:block font-['Teko','Sans-Serif']">
+          <ul className="flex items-center space-x-5 lg:space-x-8">
+            {navItems.map((item) => (
+              <li key={item.label} className="relative">
+                {item.children ? (
+                  <div>
+                    <button
+                      onClick={() => toggleDropdown(item.label)}
+                      className="flex items-center px-5 py-3 text-lg lg:text-xl font-semibold text-gray-800 dark:text-white hover:text-primary"
                     >
                       {item.label}
-                    </Link>
-                  )}
-                </div>
-              ))}
-              <Button className="mt-4 w-full bg-primary text-white hover:opacity-90 font-semibold text-lg py-4" asChild>
-                <Link href="/contact">Request a Quote</Link>
+                      <ChevronDown
+                        className={`ml-1 h-6 w-6 transition-transform ${
+                          activeDropdown === item.label ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {activeDropdown === item.label && (
+                      <div className="absolute left-0 top-full mt-2 w-64 rounded-md bg-white dark:bg-gray-800 p-3 shadow-lg">
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.label}
+                            href={child.href}
+                            className="block rounded-md px-5 py-3 text-lg text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                            onClick={() => setActiveDropdown(null)}
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="block px-5 py-3 text-lg lg:text-xl font-semibold text-gray-800 dark:text-white hover:text-primary"
+                  >
+                    {item.label}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Desktop CTA */}
+        <div className="hidden md:block">
+          <Button
+            size="lg"
+            className="bg-primary text-white font-['Teko','Sans-Serif'] hover:opacity-90 font-semibold text-lg lg:text-xl px-6 py-3"
+            asChild
+          >
+            <Link href="/contact">Request a Quote</Link>
+          </Button>
+        </div>
+
+        {/* Mobile Header */}
+        <div className="md:hidden flex font-['Teko','Sans-Serif'] items-center justify-between w-full px-4">
+          {/* Mobile Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/images/053.jpg"
+              alt="Flexverse Logo"
+              width={180}
+              height={70}
+              className="h-12 w-auto"
+            />
+            <span className="text-[18px] text-primary leading-tight">
+              FLEXVERSE <br />
+              POLYMERS PVT. LTD.
+            </span>
+          </Link>
+
+          {/* Mobile Menu */}
+          <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-8 w-8 text-gray-800 dark:text-white" />
+                <span className="sr-only">Toggle menu</span>
               </Button>
-            </div>
-          </SheetContent>
-        </Sheet>
+            </SheetTrigger>
+            <SheetContent
+              side="right"
+              className="w-[300px] sm:w-[350px] font-['Teko','Sans-Serif'] bg-white dark:bg-gray-900"
+            >
+              <div className="mt-6 flex flex-col space-y-3">
+                {navItems.map((item) => (
+                  <div key={item.label}>
+                    {item.children ? (
+                      <div className="mb-2">
+                        <button
+                          onClick={() => toggleDropdown(item.label)}
+                          className="flex w-full items-center justify-between py-4 text-lg font-semibold text-gray-800 dark:text-white"
+                        >
+                          {item.label}
+                          <ChevronDown
+                            className={`h-7 w-7 transition-transform ${
+                              activeDropdown === item.label ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+                        {activeDropdown === item.label && (
+                          <div className="ml-4 mt-2 space-y-2 border-l-2 border-primary pl-4">
+                            {item.children.map((child) => (
+                              <Link
+                                key={child.label}
+                                href={child.href}
+                                onClick={() => setSheetOpen(false)} // ✅ Close menu on click
+                                className="block py-3 text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
+                              >
+                                {child.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        onClick={() => setSheetOpen(false)} // ✅ Close menu on click
+                        className="block py-4 text-lg font-semibold text-gray-800 dark:text-white hover:text-primary"
+                      >
+                        {item.label}
+                      </Link>
+                    )}
+                  </div>
+                ))}
+                <Button
+                  className="mt-4 w-full bg-primary text-white hover:opacity-90 font-semibold text-lg py-4"
+                  asChild
+                >
+                  <Link href="/contact" onClick={() => setSheetOpen(false)}>
+                    Request a Quote
+                  </Link>
+                </Button>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
-    </div>
-  </header>
-  
-  
+    </header>
   );
 }

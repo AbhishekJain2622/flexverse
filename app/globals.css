@@ -69,7 +69,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-teko), sans-serif;
+    font-family: var(--font-'teko','Sans-Serif'), sans-serif;
     font-weight: 700;
   }
   
@@ -79,7 +79,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-roboto);
+    font-family: var(--font-'roboto','Sans-Serif');
     font-weight: 700;
   }
   p,
@@ -89,7 +89,7 @@
   textarea,
   select,
   li {
-    font-family: var(--font-roboto);
+    font-family: var(--font-'roboto','Sans-Serif');
   }
 }
 

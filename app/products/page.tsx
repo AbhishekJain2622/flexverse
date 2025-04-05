@@ -76,7 +76,7 @@ export default function ProductsPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-6 text-4xl font-bold md:text-5xl">Our Products</h1>
-            <p className="text-lg text-white/90 md:text-xl">
+            <p className="text-lg text-white/90 md:text-2xl">
               Discover our comprehensive range of innovative solutions designed to meet your specific needs
             </p>
           </div>
