@@ -46,8 +46,8 @@ export default function ClientsPage() {
 >
   <div className="container mx-auto px-4 relative z-10">
     <div className="mx-auto max-w-3xl text-center">
-      <h1 className="mb-6 text-xl font-bold md:text-6xl font-['teko','Sans-Serif']  md:text-7xl">Our Clients</h1>
-      <p className=" text-white font-['roboto','Sans-Serif'] md:text-2xl">
+      <h1 className="mb-6 text-xl font-bold md:text-6xl font-teko  md:text-7xl">Our Clients</h1>
+      <p className=" text-white font-roboto md:text-2xl">
         We're proud to work with leading organizations across various industries
       </p>
     </div>
@@ -73,8 +73,8 @@ export default function ClientsPage() {
       <section className="py-16 bg-secondary/5">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-[40px] font-bold text-primary font-['teko','Sans-Serif']">Our Valued Partners</h2>
-            <p className="mx-auto max-w-5xl text-lg font-['roboto','Sans-Serif'] text-foreground/90">
+            <h2 className="mb-4 text-[40px] font-bold text-primary font-teko">Our Valued Partners</h2>
+            <p className="mx-auto max-w-5xl text-lg font-roboto text-foreground/90">
               We're proud to collaborate with these industry-leading organizations
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function ClientsPage() {
                 key={index}
                 className="flex items-center justify-center rounded-lg bg-white p-6 shadow-md transition-all hover:shadow-lg"
               >
-                <div className="relative h-24 font-['teko','Sans-Serif'] w-full">
+                <div className="relative h-24 font-teko w-full">
                   <Image src={client.logo || "/placeholder.svg"} alt={client.name} fill className="object-contain" />
                 </div>
               </div>
@@ -150,8 +150,8 @@ export default function ClientsPage() {
       <section className="gradient-bg py-16 text-white">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-4 text-[40px] font-bold font-['teko','Sans-Serif']">Join Our Growing List of Satisfied Clients</h2>
-            <p className="mb-8 text-[18px] text-white/90 font-['roboto','Sans-Serif']">
+            <h2 className="mb-4 text-[40px] font-bold font-teko">Join Our Growing List of Satisfied Clients</h2>
+            <p className="mb-8 text-[18px] text-white/90 font-roboto">
               Contact us today to discuss how our solutions can benefit your next project
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -159,7 +159,7 @@ export default function ClientsPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 font-medium text-primary hover:bg-white/90 transition-colors relative overflow-hidden group animate-pulse"
               >
-                <span className="relative z-10 font-['teko','Sans-Serif']">Contact Us</span>
+                <span className="relative z-10 font-teko">Contact Us</span>
                 <span className="absolute inset-0 bg-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </a>
               {/* <a

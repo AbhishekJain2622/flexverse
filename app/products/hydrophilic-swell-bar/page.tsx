@@ -21,8 +21,8 @@ export default function HydrophilicSwellBarPage() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="mx-auto max-w-4xl">
-            <h1 className="mb-6 text-4xl font-bold font-['teko','Sans-Serif']  md:text-6xl">Flexverse Hydrophilic Swell Bar</h1>
-            <p className="text-lg text-white/90 font-['teko','Sans-Serif'] md:text-2xl">
+            <h1 className="mb-6 text-4xl font-bold font-teko  md:text-6xl">Flexverse Hydrophilic Swell Bar</h1>
+            <p className="text-lg text-white/90 font-teko md:text-2xl">
               Advanced water stop solution for concrete construction joints and penetrations
             </p>
           </div>
@@ -35,17 +35,17 @@ export default function HydrophilicSwellBarPage() {
         <div className="container mx-auto px-4">
           <div className="grid gap-12 lg:grid-cols-3">
             <div className="lg:col-span-2">
-              <h2 className="mb-6 text-4xl font-bold font-['teko','Sans-Serif'] text-primary">Product Description</h2>
+              <h2 className="mb-6 text-4xl font-bold font-teko text-primary">Product Description</h2>
               <div className="space-y-4  text-foreground/90">
-                <p className="font-normal md:text-[19px] font-['teko','Sans-Serif']">
+                <p className="font-normal md:text-[19px] font-teko">
                 The Flexverse® hydrophilic swell bar is a water stop that can be used to stop water ingress through cast-in-place concrete construction joints and penetrations in concrete. The profile has a sophisticated hydrophilic structure, which has been engineered to swell on contact with water and exert pressure against the ingress inside the structure. This forms an effective sealing system that can bar water entering even through the most microscopic cracks and penetrations. Flexverse® hydrophilic swell bars are crafted to have a robust build, and possess a unique reversible chemistry that ensure our swell bars can endure repeated cycles of wet-dry expansion and contraction in the long-run, while retaining their properties.
                 </p>
                
               </div>
 
               <div className="mt-10">
-                <h3 className="mb-4 text-4xl font-bold text-primary font-['teko','Sans-Serif']">Key Features</h3>
-                <ul className="space-y-2 list-disc pl-5 text-foreground/90 md:text-[19px] font-['roboto','Sans-Serif']">
+                <h3 className="mb-4 text-4xl font-bold text-primary font-teko">Key Features</h3>
+                <ul className="space-y-2 list-disc pl-5 text-foreground/90 md:text-[19px] font-roboto">
                   <li>Sophisticated hydrophilic structure engineered for optimal performance</li>
                   <li>Effective sealing against water ingress through microscopic cracks</li>
                   <li>Reversible chemistry allows for repeated wet-dry expansion cycles</li>
@@ -56,8 +56,8 @@ export default function HydrophilicSwellBarPage() {
               </div>
 
               <div className="mt-10">
-                <h3 className="mb-4 text-4xl font-bold text-primary font-['teko','Sans-Serif']">Applications</h3>
-                <ul className="space-y-2 list-disc md:text-[19px] pl-5 font-['roboto','Sans-Serif'] text-foreground/90">
+                <h3 className="mb-4 text-4xl font-bold text-primary font-teko">Applications</h3>
+                <ul className="space-y-2 list-disc md:text-[19px] pl-5 font-roboto text-foreground/90">
                   <li>Underground structures and basements</li>
                   <li>Water treatment plants</li>
                   <li>Tunnels and subway systems</li>
@@ -72,12 +72,12 @@ export default function HydrophilicSwellBarPage() {
             <div>
             <Card className="overflow-hidden">
   <CardContent className="p-6">
-    <h3 className="mb-6 text-2xl font-bold text-primary font-['teko','Sans-Serif']">FLEXVERSE® Resources</h3>
+    <h3 className="mb-6 text-2xl font-bold text-primary font-teko">FLEXVERSE® Resources</h3>
     <div className="space-y-4 md:text-[19px]">
       <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf">
         <Button variant="outline" className="w-full justify-start gap-2">
           <Download className="h-4 w-4" />
-          <span className="font-['teko','Sans-Serif']">Download Catalogue</span>
+          <span className="font-teko">Download Catalogue</span>
         </Button>
       </a>
       <br />
@@ -94,12 +94,12 @@ export default function HydrophilicSwellBarPage() {
 </Card>
 
               <div className="mt-8">
-                <h3 className="mb-4 text-3xl font-bold text-primary font-['teko','Sans-Serif']">Need Help?</h3>
-                <p className="mb-4 text-foreground/90 md:text-[19px] font-['roboto','Sans-Serif'] ">
+                <h3 className="mb-4 text-3xl font-bold text-primary font-teko">Need Help?</h3>
+                <p className="mb-4 text-foreground/90 md:text-[19px] font-roboto ">
                   Contact our technical team for assistance with product selection or installation guidance.
                 </p>
                 <Button asChild className="w-full">
-                  <Link href="/contact font-['teko','Sans-Serif']">Contact Us</Link>
+                  <Link href="/contact font-teko">Contact Us</Link>
                 </Button>
               </div>
             </div>
@@ -109,8 +109,8 @@ export default function HydrophilicSwellBarPage() {
 {/* Product Gallery */}
 <section className="bg-secondary/5 py-16">
   <div className="container mx-auto px-4">
-    <h2 className="mb-8 text-4xl font-bold text-primary text-center font-['teko','Sans-Serif']">Product Gallery</h2>
-    <div className="grid gap-6 sm:grid-cols-2  font-['roboto','Sans-Serif'] lg:grid-cols-4">
+    <h2 className="mb-8 text-4xl font-bold text-primary text-center font-teko">Product Gallery</h2>
+    <div className="grid gap-6 sm:grid-cols-2  font-roboto lg:grid-cols-4">
       {[
         { color: "Red", description: "For standard construction joints", image: "/images/2.png" },
         { color: "Black", description: "For high-pressure applications", image: "/images/3.png" },
@@ -127,8 +127,8 @@ export default function HydrophilicSwellBarPage() {
             />
           </div>
           <div className="p-4">
-            <h3 className="text-lg font-semibold font-['roboto','Sans-Serif']">{item.color} Swell Bar</h3>
-            <p className="text-foreground/80 font-['roboto','Sans-Serif']">{item.description}</p>
+            <h3 className="text-lg font-semibold font-roboto">{item.color} Swell Bar</h3>
+            <p className="text-foreground/80 font-roboto">{item.description}</p>
           </div>
         </div>
       ))}
@@ -140,8 +140,8 @@ export default function HydrophilicSwellBarPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-4 text-4xl font-bold text-primary font-['teko','Sans-Serif']">Installation Guide</h2>
-            <p className="mb-8  md:text-[20px] text-foreground/90 font-['roboto','Sans-Serif']">
+            <h2 className="mb-4 text-4xl font-bold text-primary font-teko">Installation Guide</h2>
+            <p className="mb-8  md:text-[20px] text-foreground/90 font-roboto">
               Follow these steps to ensure proper installation of Flexverse® Hydrophilic Swell Bar
             </p>
           </div>
@@ -149,8 +149,8 @@ export default function HydrophilicSwellBarPage() {
           <div className="mx-auto max-w-4xl">
             <div className="grid gap-8 md:grid-cols-2">
               <div className="rounded-lg bg-white p-6 shadow-md">
-                <h3 className="mb-4 text-2xl font-semibold font-['teko','Sans-Serif']">Surface Preparation</h3>
-                <ol className="list-decimal md:text-[19px] pl-5 space-y-2 text-foreground/90 font-['roboto','Sans-Serif']">
+                <h3 className="mb-4 text-2xl font-semibold font-teko">Surface Preparation</h3>
+                <ol className="list-decimal md:text-[19px] pl-5 space-y-2 text-foreground/90 font-roboto">
                   <li>Clean the concrete surface thoroughly</li>
                   <li>Remove any dust, debris, or loose particles</li>
                   <li>Ensure the surface is dry before installation</li>
@@ -159,8 +159,8 @@ export default function HydrophilicSwellBarPage() {
               </div>
 
               <div className="rounded-lg bg-white p-6 shadow-md">
-                <h3 className="mb-4 text-2xl font-semibold font-['teko','Sans-Serif']">Placement</h3>
-                <ol className="list-decimal pl-5  md:text-[19px] space-y-2 font-['roboto','Sans-Serif'] text-foreground/90">
+                <h3 className="mb-4 text-2xl font-semibold font-teko">Placement</h3>
+                <ol className="list-decimal pl-5  md:text-[19px] space-y-2 font-roboto text-foreground/90">
                   <li>Position the swell bar in the center of the joint</li>
                   <li>Maintain minimum 50mm concrete cover</li>
                   <li>Secure with adhesive or nails as needed</li>
@@ -169,8 +169,8 @@ export default function HydrophilicSwellBarPage() {
               </div>
 
               <div className="rounded-lg bg-white p-6 shadow-md">
-                <h3 className="mb-4 text-2xl font-semibold font-['teko','Sans-Serif']">Joints and Overlaps</h3>
-                <ol className="list-decimal md:text-[19px] pl-5 space-y-2 font-['roboto','Sans-Serif'] text-foreground/90">
+                <h3 className="mb-4 text-2xl font-semibold font-teko">Joints and Overlaps</h3>
+                <ol className="list-decimal md:text-[19px] pl-5 space-y-2 font-roboto text-foreground/90">
                   <li>Cut ends square for butt joints</li>
                   <li>Place ends side by side with tight contact</li>
                   <li>For overlaps, use minimum 50mm overlap length</li>
@@ -179,8 +179,8 @@ export default function HydrophilicSwellBarPage() {
               </div>
 
               <div className="rounded-lg bg-white p-6 shadow-md">
-                <h3 className="mb-4 text-2xl font-semibold font-['teko','Sans-Serif']">Concrete Pouring</h3>
-                <ol className="list-decimal md:text-[19px] pl-5 space-y-2 font-['roboto','Sans-Serif'] text-foreground/90">
+                <h3 className="mb-4 text-2xl font-semibold font-teko">Concrete Pouring</h3>
+                <ol className="list-decimal md:text-[19px] pl-5 space-y-2 font-roboto text-foreground/90">
                   <li>Pour concrete carefully to avoid displacing the swell bar</li>
                   <li>Ensure proper compaction around the swell bar</li>
                   <li>Allow concrete to cure as per specifications</li>
@@ -190,7 +190,7 @@ export default function HydrophilicSwellBarPage() {
             </div>
 
             <div className="mt-8 text-center">
-              <p className="text-foreground/90 italic md:text-[19px] font-['roboto','Sans-Serif']" >
+              <p className="text-foreground/90 italic md:text-[19px] font-roboto" >
                 For detailed installation instructions, please refer to our technical data sheet or contact our support
                 team.
               </p>
@@ -205,12 +205,12 @@ export default function HydrophilicSwellBarPage() {
       <section className="gradient-bg py-16 text-header">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-4 text-4xl font-bold font-['teko','Sans-Serif']">Ready to Order?</h2>
-            <p className="mb-8 md:text-[20px] font-['roboto','Sans-Serif'] text-header/90">
+            <h2 className="mb-4 text-4xl font-bold font-teko">Ready to Order?</h2>
+            <p className="mb-8 md:text-[20px] font-roboto text-header/90">
               Contact our sales team for pricing, availability, and technical support
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="bg-white text-primary md:text-[18px] font-['teko','Sans-Serif'] hover:bg-white/90" asChild>
+              <Button size="lg" className="bg-white text-primary md:text-[18px] font-teko hover:bg-white/90" asChild>
                 <Link href="/contact">Request a Quote</Link>
               </Button>
               {/* <Button size="lg" variant="outline" className="text-header border-white hover:bg-white/10" asChild>

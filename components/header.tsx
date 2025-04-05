@@ -57,14 +57,14 @@ export default function Header() {
             height={90}
             className="h-12 md:h-16 w-auto max-w-[220px]"
           />
-          <span className="text-[15px] md:text-[18px] font-['Teko','Sans-Serif'] text-primary leading-tight">
+          <span className="text-[19px] md:text-[22px] font-teko text-primary leading-tight">
             FLEXVERSE <br />
             POLYMERS PVT. LTD.
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:block font-['Teko','Sans-Serif']">
+        <nav className="hidden md:block font-teko">
           <ul className="flex items-center space-x-5 lg:space-x-8">
             {navItems.map((item) => (
               <li key={item.label} className="relative">
@@ -113,7 +113,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Button
             size="lg"
-            className="bg-primary text-white font-['Teko','Sans-Serif'] hover:opacity-90 font-semibold text-lg lg:text-xl px-6 py-3"
+            className="bg-primary text-white font-teko hover:opacity-90 font-semibold text-lg lg:text-xl px-6 py-3"
             asChild
           >
             <Link href="/contact">Request a Quote</Link>
@@ -121,7 +121,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Header */}
-        <div className="md:hidden flex font-['Teko','Sans-Serif'] items-center justify-between w-full px-4">
+        <div className="md:hidden flex font-teko items-center justify-between w-full px-4">
           {/* Mobile Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
@@ -131,7 +131,7 @@ export default function Header() {
               height={70}
               className="h-12 w-auto"
             />
-            <span className="text-[18px] text-primary leading-tight">
+            <span className="text-[19px] text-primary leading-tight">
               FLEXVERSE <br />
               POLYMERS PVT. LTD.
             </span>
@@ -147,7 +147,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[300px] sm:w-[350px] font-['Teko','Sans-Serif'] bg-white dark:bg-gray-900"
+              className="w-[300px] sm:w-[350px] font-teko bg-white dark:bg-gray-900"
             >
               <div className="mt-6 flex flex-col space-y-3">
                 {navItems.map((item) => (

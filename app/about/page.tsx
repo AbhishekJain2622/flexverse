@@ -15,8 +15,8 @@ export default function AboutPage() {
   style={{ backgroundImage: "url('/images/about5.png')" }}
 >
   <div className="container mx-auto px-4 text-center">
-    <h1 className="mb-6 text-4xl font-bold md:text-6xl font-['teko','Sans-Serif']  md:text-7xl">About Flexverse</h1>
-    <p className="text-lg text-white/90 font-['roboto','Sans-Serif'] max-w-3xl md:text-2xl mx-auto">
+    <h1 className="mb-6 text-4xl font-bold md:text-6xl font-teko  md:text-7xl">About Flexverse</h1>
+    <p className="text-lg text-white/90 font-roboto max-w-3xl md:text-2xl mx-auto">
       Learn about our journey, our values, and the team that makes Flexverse a leader in innovative solutions.
     </p>
   </div>
@@ -34,10 +34,10 @@ export default function AboutPage() {
         {/* About Company Section */}
         <div className="flex flex-col items-center md:flex-row md:items-start gap-8 md:gap-12">
           <div className="w-full md:w-1/2 px-4 text-center md:text-right md:pr-12">
-          <h3 className="mb-2 text-xl font-semibold text-left md:text-[27px] font-['Teko','Sans-Serif']">
+          <h3 className="mb-2 text-xl font-semibold text-left md:text-[27px] font-teko">
   ABOUT COMPANY
 </h3>
-<p className="text-gray-600 text-left md:text-[19px] font-normal font-['Roboto','Sans-Serif']">
+<p className="text-gray-600 text-left md:text-[19px] font-normal font-roboto">
   Welcome to Flexverse Polymers — your trusted partner in providing innovative solutions for the construction and infrastructure sectors. Founded in 2022, Flexverse Polymers is the result of over three decades of industry expertise, built upon the legacy of our sister companies: 
   <a href="https://www.hitechrubber.in/bridge_bearings.html" className="text-primary"> Hitech Rubber Industries</a>, Mumbai (established in 1995), and Kanta Enterprises, Bengaluru (established in 1987). 
   <br /><br />
@@ -60,9 +60,9 @@ export default function AboutPage() {
         {/* Our Commitment to Quality Section */}
         <div className="flex flex-col items-center md:flex-row md:items-start gap-8 md:gap-12">
           <div className="w-full md:w-1/2 order-2 md:order-1 px-4">
-            <h3 className="mb-2 text-xl font-semibold text-center  md:text-[27px] md:text-left font-['teko','Sans-Serif']">OUR COMMITMENT TO QUALITY</h3>
+            <h3 className="mb-2 text-xl font-semibold text-center  md:text-[27px] md:text-left font-teko">OUR COMMITMENT TO QUALITY</h3>
        
-<p className="text-gray-600 text-left md:text-[19px] font-normal font-['Roboto','Sans-Serif']">
+<p className="text-gray-600 text-left md:text-[19px] font-normal font-roboto">
   At Flexverse Polymers, we understand that choosing the right products and solutions is crucial to the success of any construction project. That’s why we are committed to delivering premium products and services that meet the unique needs of our clients, every step of the way.
   <br /><br />
   Whether you’re working on large-scale infrastructure projects or specialized construction requirements, quality is at the core of our approach. We rigorously test all of our products at our in-house labs and NABL-approved facilities to ensure they meet and exceed both national and international standards.
@@ -94,8 +94,8 @@ export default function AboutPage() {
       <section className="py-20">
   <div className="container mx-auto px-4 max-w-5xl">
     <div className="mb-12 text-center">
-      <h2 className="mb-4 text-4xl font-bold text-primary  font-['teko','Sans-Serif']  md:text-[45px]">Our Leadership Team</h2>
-      <p className="mx-auto max-w-4xl  md:text-[22px] text-gray-600 font-['roboto','Sans-Serif']">
+      <h2 className="mb-4 text-4xl font-bold text-primary  font-teko  md:text-[45px]">Our Leadership Team</h2>
+      <p className="mx-auto max-w-4xl  md:text-[22px] text-gray-600 font-roboto">
         Meet the talented individuals who drive our vision and lead our company to success.
       </p>
     </div>
@@ -129,8 +129,8 @@ export default function AboutPage() {
             <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover rounded-t-lg" />
           </div>
           <div className="p-8 text-center">
-            <h3 className="mb-2 text-2xl font-bold font-['teko','Sans-Serif']">{member.name}</h3>
-            <p className="mb-4 text-lg font-medium text-primary font-['teko','Sans-Serif']">{member.position}</p>
+            <h3 className="mb-2 text-2xl font-bold font-teko">{member.name}</h3>
+            <p className="mb-4 text-lg font-medium text-primary font-teko">{member.position}</p>
             {/* <p className="text-gray-600 text-base">{member.bio}</p> */}
           </div>
         </div>

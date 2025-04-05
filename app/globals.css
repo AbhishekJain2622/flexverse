@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Google Fonts (optional if you're using next/font, safe to remove if only using next/font) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Teko:wght@300..700&display=swap');
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -53,35 +56,27 @@
     --header-light: 220 20% 22%;
     --footer: 220 20% 15%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-roboto), sans-serif;
   }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: var(--font-'teko','Sans-Serif'), sans-serif;
+    font-family: var(--font-teko), sans-serif;
     font-weight: 700;
   }
-  
-  p,
-  a,
-  button h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-'roboto','Sans-Serif');
-    font-weight: 700;
-  }
+
   p,
   a,
   button,
@@ -89,13 +84,9 @@
   textarea,
   select,
   li {
-    font-family: var(--font-'roboto','Sans-Serif');
+    font-family: var(--font-roboto), sans-serif;
+    font-weight: 400;
   }
-}
-
-/* Custom utility classes */
-.clip-path-bottom {
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
 }
 
 @layer utilities {
@@ -129,3 +120,7 @@
   width: fit-content;
 }
 
+/* Optional: clip-path shape */
+.clip-path-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+}
