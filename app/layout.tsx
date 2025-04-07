@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   title: "Flexverse - Innovative Solutions for Modern Challenges",
   description: "Flexverse is your partner in creating flexible solutions for today's complex business environment",
   icons: {
-    icon: "/favicon.png",
+    icon: "/Footer.png",
   },
 };
 
