@@ -37,7 +37,7 @@ export default function HydrophilicSwellBarPage() {
             <div className="lg:col-span-2">
               <h2 className="mb-6 text-4xl font-bold font-teko text-primary">Product Description</h2>
               <div className="space-y-4  text-foreground/90">
-                <p className="font-normal md:text-[19px] font-teko">
+                <p className="font-normal md:text-[19px]">
                 The Flexverse® hydrophilic swell bar is a water stop that can be used to stop water ingress through cast-in-place concrete construction joints and penetrations in concrete. The profile has a sophisticated hydrophilic structure, which has been engineered to swell on contact with water and exert pressure against the ingress inside the structure. This forms an effective sealing system that can bar water entering even through the most microscopic cracks and penetrations. Flexverse® hydrophilic swell bars are crafted to have a robust build, and possess a unique reversible chemistry that ensure our swell bars can endure repeated cycles of wet-dry expansion and contraction in the long-run, while retaining their properties.
                 </p>
                
@@ -77,7 +77,7 @@ export default function HydrophilicSwellBarPage() {
       <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf">
         <Button variant="outline" className="w-full justify-start gap-2">
           <Download className="h-4 w-4" />
-          <span className="font-teko">Download Catalogue</span>
+          <span>Download Catalogue</span>
         </Button>
       </a>
       <br />
