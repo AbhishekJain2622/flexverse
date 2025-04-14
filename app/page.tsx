@@ -300,7 +300,7 @@ export default function Home() {
             <h3 className="mb-2 text-4xl font-semibold font-teko text-primary">
               {product.title}
             </h3>
-            <p className="text-primary-700  font-roboto font-normal text-[19px] leading-relaxed">{product.description}</p>
+            <p className="text-primary-700  font-roboto font-normal text-[19px] leading-relaxed"  style={{ textAlign: 'justify' }}>{product.description}</p>
 
             {/* Buttons */}
             <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
