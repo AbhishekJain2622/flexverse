@@ -37,7 +37,8 @@ export default function HydrophilicSwellBarPage() {
             <div className="lg:col-span-2">
               <h2 className="mb-6 text-4xl font-bold font-teko text-primary">Product Description</h2>
               <div className="space-y-4  text-foreground/90">
-                <p className="font-normal md:text-[19px]">
+                <p className="font-normal md:text-[19px]"   style={{ textAlign: 'justify' }}
+                >
                 The Flexverse® hydrophilic swell bar is a water stop that can be used to stop water ingress through cast-in-place concrete construction joints and penetrations in concrete. The profile has a sophisticated hydrophilic structure, which has been engineered to swell on contact with water and exert pressure against the ingress inside the structure. This forms an effective sealing system that can bar water entering even through the most microscopic cracks and penetrations. Flexverse® hydrophilic swell bars are crafted to have a robust build, and possess a unique reversible chemistry that ensure our swell bars can endure repeated cycles of wet-dry expansion and contraction in the long-run, while retaining their properties.
                 </p>
                
@@ -45,7 +46,8 @@ export default function HydrophilicSwellBarPage() {
 
               <div className="mt-10">
                 <h3 className="mb-4 text-4xl font-bold text-primary font-teko">Key Features</h3>
-                <ul className="space-y-2 list-disc pl-5 text-foreground/90 md:text-[19px] font-roboto">
+                <ul className="space-y-2 list-disc pl-5 text-foreground/90 md:text-[19px] font-roboto"   style={{ textAlign: 'justify' }}
+                >
                   <li>Sophisticated hydrophilic structure engineered for optimal performance</li>
                   <li>Effective sealing against water ingress through microscopic cracks</li>
                   <li>Reversible chemistry allows for repeated wet-dry expansion cycles</li>
@@ -57,7 +59,8 @@ export default function HydrophilicSwellBarPage() {
 
               <div className="mt-10">
                 <h3 className="mb-4 text-4xl font-bold text-primary font-teko">Applications</h3>
-                <ul className="space-y-2 list-disc md:text-[19px] pl-5 font-roboto text-foreground/90">
+                <ul className="space-y-2 list-disc md:text-[19px] pl-5 font-roboto text-foreground/90"   style={{ textAlign: 'justify' }}
+                >
                   <li>Underground structures and basements</li>
                   <li>Water treatment plants</li>
                   <li>Tunnels and subway systems</li>
@@ -190,7 +193,8 @@ export default function HydrophilicSwellBarPage() {
             </div>
 
             <div className="mt-8 text-center">
-              <p className="text-foreground/90 italic md:text-[19px] font-roboto" >
+              <p className="text-foreground/90 italic md:text-[19px] font-roboto"   style={{ textAlign: 'justify' }}
+              >
                 For detailed installation instructions, please refer to our technical data sheet or contact our support
                 team.
               </p>

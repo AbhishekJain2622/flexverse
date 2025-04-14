@@ -37,7 +37,8 @@ export default function AboutPage() {
           <h3 className="mb-2 text-xl font-semibold text-left md:text-[27px] font-teko">
   ABOUT COMPANY
 </h3>
-<p className="text-gray-600 text-left md:text-[19px] font-normal font-roboto">
+<p className="text-gray-600 text-left md:text-[19px] font-normal font-roboto"   style={{ textAlign: 'justify' }}
+>
   Welcome to Flexverse Polymers — your trusted partner in providing innovative solutions for the construction and infrastructure sectors. Founded in 2022, Flexverse Polymers is the result of over three decades of industry expertise, built upon the legacy of our sister companies: 
   <a href="https://www.hitechrubber.in/bridge_bearings.html" className="text-primary"> Hitech Rubber Industries</a>, Mumbai (established in 1995), and Kanta Enterprises, Bengaluru (established in 1987). 
   <br /><br />
@@ -62,7 +63,8 @@ export default function AboutPage() {
           <div className="w-full md:w-1/2 order-2 md:order-1 px-4">
             <h3 className="mb-2 text-xl font-semibold text-center  md:text-[27px] md:text-left font-teko">OUR COMMITMENT TO QUALITY</h3>
        
-<p className="text-gray-600 text-left md:text-[19px] font-normal font-roboto">
+<p className="text-gray-600 text-left md:text-[19px] font-normal font-roboto"   style={{ textAlign: 'justify' }}
+>
   At Flexverse Polymers, we understand that choosing the right products and solutions is crucial to the success of any construction project. That’s why we are committed to delivering premium products and services that meet the unique needs of our clients, every step of the way.
   <br /><br />
   Whether you’re working on large-scale infrastructure projects or specialized construction requirements, quality is at the core of our approach. We rigorously test all of our products at our in-house labs and NABL-approved facilities to ensure they meet and exceed both national and international standards.

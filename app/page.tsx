@@ -198,7 +198,10 @@ export default function Home() {
               <p className="mb-4 text-[22px] font-teko leading-relaxed text-foreground/90 font-normal">
   Trusted Excellence in High-Quality Construction Products
 </p>
-<p className="mb-6 text-[19px] font-roboto leading-relaxed text-foreground/90 font-normal">
+<p
+  className="mb-6 text-[19px] font-roboto leading-relaxed text-foreground/90 font-normal"
+  style={{ textAlign: 'justify' }}
+>
   With over 30 years of expertise from Hitech Rubber Industries (Mumbai) and Kanta Enterprises (Bengaluru), Flexverse Polymers is your trusted partner for high-quality construction products. Driven by innovation and a commitment to excellence, we ensure our products meet the highest national and international standards, undergoing rigorous quality checks in NABL-approved labs. At Flexverse, we take pride in delivering exceptional customer service, offering reliable solutions that stand the test of time, even in the toughest conditions.
 </p>
 
