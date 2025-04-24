@@ -192,7 +192,7 @@ export default function Home() {
               />
             </div>
             <div className="lg:w-1/2">
-            <h2 className="mb-6 text-3xl font-bold font-teko tracking-tight gradient-text md:text-[45px]">
+            <h2 className="mb-6 text-3xl  font-bold font-teko tracking-tight text-foreground/90  md:text-[45px]">
   Welcome to Flexverse
 </h2>
               <p className="mb-4 text-[22px] font-teko leading-relaxed text-foreground/90 font-normal">
@@ -267,7 +267,7 @@ export default function Home() {
   <div className="container mx-auto px-6 md:px-12 lg:px-16">
     {/* Heading */}
     <div className="mb-12 text-center">
-      <h2 className="mb-3 text-3xl font-bold font-teko tracking-tight gradient-text md:text-[43px]">
+      <h2 className="mb-3 text-3xl font-bold font-teko tracking-tight text-foreground/90 md:text-[43px]">
         OUR PRODUCTS
       </h2>
       <p className="mx-auto max-w-3xl font-teko text-[23px] leading-relaxed text-foreground/90">
@@ -297,7 +297,7 @@ export default function Home() {
 
           {/* Text Section */}
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h3 className="mb-2 text-4xl font-semibold font-teko text-primary">
+            <h3 className="mb-2 text-4xl font-semibold font-teko text-foreground/90">
               {product.title}
             </h3>
             <p className="text-primary-700  font-roboto font-normal text-[19px] leading-relaxed"  style={{ textAlign: 'justify' }}>{product.description}</p>
@@ -307,7 +307,7 @@ export default function Home() {
   <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf" className="w-full sm:w-auto">
     <Button 
       size="lg" 
-      className="bg-primary font-teko text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
+      className="bg-primary font-teko text-foreground/90 px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
     >
       <span>CATALOGUE</span>
     </Button>
@@ -316,7 +316,7 @@ export default function Home() {
   <a href="/products/hydrophilic-swell-bar" className="w-full sm:w-auto">
     <Button 
       size="lg" 
-      className="bg-primary font-teko text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
+      className="bg-primary font-teko text-foreground/90 px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
     >
       KNOW MORE
     </Button>
@@ -335,7 +335,7 @@ export default function Home() {
       <section className="py-20 bg-background" ref={clientsRef}>
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-3 text-3xl font-bold tracking-tight gradient-text font-teko md:text-[45px]">Our Clients</h2>
+            <h2 className="mb-3 text-3xl font-bold tracking-tight text-foreground/90 font-teko md:text-[45px]">Our Clients</h2>
             <p className="mx-auto max-w-4xl font-teko text-[22px] leading-relaxed text-foreground/90">
               We're proud to work with businesses across various industries
             </p>

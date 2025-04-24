@@ -75,7 +75,7 @@ export default function ContactPage() {
           <div className="grid gap-10 lg:grid-cols-2">
             {/* Contact Form */}
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-primary md:text-4xl font-teko">Send Us a Message</h2>
+              <h2 className="mb-6 text-3xl font-bold text-foreground/90 md:text-4xl font-teko">Send Us a Message</h2>
               <Card>
                 <CardContent className="p-6">
                   <form onSubmit={handleSubmit} className="space-y-6 text-[30px] font-roboto">
@@ -178,7 +178,7 @@ export default function ContactPage() {
 
             {/* Contact Information */}
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-primary md:text-4xl font-teko">Get in Touch</h2>
+              <h2 className="mb-6 text-3xl font-bold text-foreground/90 md:text-4xl font-teko">Get in Touch</h2>
 
               <div className="mb-8 space-y-6 font-roboto">
                 <div className="flex items-start gap-4">
@@ -239,7 +239,7 @@ export default function ContactPage() {
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-primary md:text-5xl font-teko">Frequently Asked Questions</h2>
+            <h2 className="mb-4 text-4xl font-bold text-foreground/90 md:text-5xl font-teko">Frequently Asked Questions</h2>
             <p className="mx-auto max-w-4xl md:text-2xl text-gray-600 font-roboto">
               Find answers to common questions about our products and services
             </p>

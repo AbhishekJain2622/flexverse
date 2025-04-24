@@ -35,7 +35,7 @@ export default function HydrophilicSwellBarPage() {
         <div className="container mx-auto px-4">
           <div className="grid gap-12 lg:grid-cols-3">
             <div className="lg:col-span-2">
-              <h2 className="mb-6 text-4xl font-bold font-teko text-primary">Product Description</h2>
+              <h2 className="mb-6 text-4xl font-bold font-teko text-foreground/90 ">Product Description</h2>
               <div className="space-y-4  text-foreground/90">
                 <p className="font-normal md:text-[19px]"   style={{ textAlign: 'justify' }}
                 >
@@ -45,7 +45,7 @@ export default function HydrophilicSwellBarPage() {
               </div>
 
               <div className="mt-10">
-                <h3 className="mb-4 text-4xl font-bold text-primary font-teko">Key Features</h3>
+                <h3 className="mb-4 text-4xl font-bold text-foreground/90 font-teko">Key Features</h3>
                 <ul className="space-y-2 list-disc pl-5 text-foreground/90 md:text-[19px] font-roboto"   style={{ textAlign: 'justify' }}
                 >
                   <li>Sophisticated hydrophilic structure engineered for optimal performance</li>
@@ -58,7 +58,7 @@ export default function HydrophilicSwellBarPage() {
               </div>
 
               <div className="mt-10">
-                <h3 className="mb-4 text-4xl font-bold text-primary font-teko">Applications</h3>
+                <h3 className="mb-4 text-4xl font-boldtext-foreground/90 font-teko">Applications</h3>
                 <ul className="space-y-2 list-disc md:text-[19px] pl-5 font-roboto text-foreground/90"   style={{ textAlign: 'justify' }}
                 >
                   <li>Underground structures and basements</li>
@@ -75,7 +75,7 @@ export default function HydrophilicSwellBarPage() {
             <div>
             <Card className="overflow-hidden">
   <CardContent className="p-6">
-    <h3 className="mb-6 text-2xl font-bold text-primary font-teko">FLEXVERSE® Resources</h3>
+    <h3 className="mb-6 text-2xl font-bold text-foreground/90 font-teko">FLEXVERSE® Resources</h3>
     <div className="space-y-4 md:text-[19px]">
       <a href="/files/catalogue.pdf" download="Flexverse_Catalogue.pdf">
         <Button variant="outline" className="w-full justify-start gap-2">
@@ -97,7 +97,7 @@ export default function HydrophilicSwellBarPage() {
 </Card>
 
               <div className="mt-8">
-                <h3 className="mb-4 text-3xl font-bold text-primary font-teko">Need Help?</h3>
+                <h3 className="mb-4 text-3xl font-bold text-foreground/90 font-teko">Need Help?</h3>
                 <p className="mb-4 text-foreground/90 md:text-[19px] font-roboto ">
                   Contact our technical team for assistance with product selection or installation guidance.
                 </p>
@@ -112,7 +112,7 @@ export default function HydrophilicSwellBarPage() {
 {/* Product Gallery */}
 <section className="bg-secondary/5 py-16">
   <div className="container mx-auto px-4">
-    <h2 className="mb-8 text-4xl font-bold text-primary text-center font-teko">Product Gallery</h2>
+    <h2 className="mb-8 text-4xl font-bold text-foreground/90 text-center font-teko">Product Gallery</h2>
     <div className="grid gap-6 sm:grid-cols-2  font-roboto lg:grid-cols-4">
       {[
         { color: "Red", description: "For standard construction joints", image: "/images/2.png" },
@@ -143,7 +143,7 @@ export default function HydrophilicSwellBarPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-4 text-4xl font-bold text-primary font-teko">Installation Guide</h2>
+            <h2 className="mb-4 text-4xl font-bold text-foreground/90 font-teko">Installation Guide</h2>
             <p className="mb-8  md:text-[20px] text-foreground/90 font-roboto">
               Follow these steps to ensure proper installation of Flexverse® Hydrophilic Swell Bar
             </p>

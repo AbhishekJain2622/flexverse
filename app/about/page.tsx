@@ -40,7 +40,7 @@ export default function AboutPage() {
 <p className="text-gray-600 text-left md:text-[19px] font-normal font-roboto"   style={{ textAlign: 'justify' }}
 >
   Welcome to Flexverse Polymers — your trusted partner in providing innovative solutions for the construction and infrastructure sectors. Founded in 2022, Flexverse Polymers is the result of over three decades of industry expertise, built upon the legacy of our sister companies: 
-  <a href="https://www.hitechrubber.in/bridge_bearings.html" className="text-primary"> Hitech Rubber Industries</a>, Mumbai (established in 1995), and Kanta Enterprises, Bengaluru (established in 1987). 
+  <a href="https://www.hitechrubber.in/bridge_bearings.html" className="text-foreground/90 font-bold"> Hitech Rubber Industries</a>, Mumbai (established in 1995), and Kanta Enterprises, Bengaluru (established in 1987). 
   <br /><br />
   Together, our companies have been at the forefront of the construction, infrastructure, and waterproofing industries, delivering exceptional products and services across a diverse range of prestigious projects in India and around the world.
 </p>
@@ -61,7 +61,7 @@ export default function AboutPage() {
         {/* Our Commitment to Quality Section */}
         <div className="flex flex-col items-center md:flex-row md:items-start gap-8 md:gap-12">
           <div className="w-full md:w-1/2 order-2 md:order-1 px-4">
-            <h3 className="mb-2 text-xl font-semibold text-center  md:text-[27px] md:text-left font-teko">OUR COMMITMENT TO QUALITY</h3>
+            <h3 className="mb-2 text-xl font-semibold text-center text-foreground/90 md:text-[27px] md:text-left font-teko">OUR COMMITMENT TO QUALITY</h3>
        
 <p className="text-gray-600 text-left md:text-[19px] font-normal font-roboto"   style={{ textAlign: 'justify' }}
 >
@@ -96,7 +96,7 @@ export default function AboutPage() {
       <section className="py-20">
   <div className="container mx-auto px-4 max-w-5xl">
     <div className="mb-12 text-center">
-      <h2 className="mb-4 text-4xl font-bold text-primary  font-teko  md:text-[45px]">Our Leadership Team</h2>
+      <h2 className="mb-4 text-4xl font-bold text-foreground/90  font-teko  md:text-[45px]">Our Leadership Team</h2>
       <p className="mx-auto max-w-4xl  md:text-[22px] text-gray-600 font-roboto">
         Meet the talented individuals who drive our vision and lead our company to success.
       </p>

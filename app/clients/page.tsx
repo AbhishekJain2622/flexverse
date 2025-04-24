@@ -73,7 +73,7 @@ export default function ClientsPage() {
       <section className="py-16 bg-secondary/5">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-[40px] font-bold text-primary font-teko">Our Valued Partners</h2>
+            <h2 className="mb-4 text-[40px] font-bold text-foreground/90 font-teko">Our Valued Partners</h2>
             <p className="mx-auto max-w-5xl text-lg font-roboto text-foreground/90">
               We're proud to collaborate with these industry-leading organizations
             </p>

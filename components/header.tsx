@@ -57,7 +57,7 @@ export default function Header() {
             height={90}
             className="h-12 md:h-16 w-auto max-w-[220px]"
           />
-          <span className="text-[19px] md:text-[22px] font-teko text-primary leading-tight">
+          <span className="text-[19px] md:text-[22px] font-teko text-foreground/90 leading-tight">
             FLEXVERSE <br />
             POLYMERS PVT. LTD.
           </span>
@@ -113,7 +113,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Button
             size="lg"
-            className="bg-primary text-white font-teko hover:opacity-90 font-semibold text-lg lg:text-xl px-6 py-3"
+            className="bg-primary text-foreground/90 font-teko hover:opacity-90  text-lg lg:text-xl px-6 py-3"
             asChild
           >
             <Link href="/contact">Request a Quote</Link>
@@ -131,7 +131,7 @@ export default function Header() {
               height={70}
               className="h-12 w-auto"
             />
-            <span className="text-[19px] text-primary leading-tight">
+            <span className="text-[19px] text-foreground/90 leading-tight">
               FLEXVERSE <br />
               POLYMERS PVT. LTD.
             </span>
@@ -192,7 +192,7 @@ export default function Header() {
                   </div>
                 ))}
                 <Button
-                  className="mt-4 w-full bg-primary text-white hover:opacity-90 font-semibold text-lg py-4"
+                  className="mt-4 w-full bg-primary text-foreground/90 hover:opacity-90 font-semibold text-lg py-4"
                   asChild
                 >
                   <Link href="/contact" onClick={() => setSheetOpen(false)}>
